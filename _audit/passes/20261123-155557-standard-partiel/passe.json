@@ -1,0 +1,16 @@
+{
+ "id": "20261123-155557-standard-partiel",
+ "date": "2026-11-23T15:57:45.766Z",
+ "niveau": "standard",
+ "pages": "toutes",
+ "etapes": [
+  "fichiers",
+  "films"
+ ],
+ "version": "1",
+ "echecs": 0,
+ "aRegarder": 3,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "complet"
+}

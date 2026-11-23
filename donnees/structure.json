@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ATOUS CŒUR",
+  "description": "Services à la personne à domicile : ménage, jardin, courses, aide aux repas, accompagnement aux rendez-vous, aide administrative.",
+  "url": "https://atouscoeurjerome-maquette.vercel.app/",
+  "telephone": "+33687546888",
+  "email": "jeromesannier@yahoo.fr",
+  "founder": { "@type": "Person", "name": "Jérôme Sannier" },
+  "foundingDate": "2022",
+  "address": { "@type": "PostalAddress", "addressLocality": "Hondainville", "addressRegion": "Oise", "addressCountry": "FR" },
+  "identifier": "SIRET 92482480800019",
+  "makesOffer": [
+    { "@type": "Offer", "name": "Ménage intérieur", "price": "30", "priceCurrency": "EUR", "unitText": "heure" },
+    { "@type": "Offer", "name": "Entretien extérieur", "price": "35", "priceCurrency": "EUR", "unitText": "heure" },
+    { "@type": "Offer", "name": "Rendez-vous médicaux ou autres", "price": "25", "priceCurrency": "EUR", "unitText": "heure" },
+    { "@type": "Offer", "name": "Portage de courses", "price": "25", "priceCurrency": "EUR", "unitText": "heure" },
+    { "@type": "Offer", "name": "Aide administrative", "price": "25", "priceCurrency": "EUR", "unitText": "heure" }
+  ]
+}

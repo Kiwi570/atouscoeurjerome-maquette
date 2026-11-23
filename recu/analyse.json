@@ -1,0 +1,868 @@
+{
+  "dossier": "/Users/paul/Downloads/atouscoeurjerome-recu",
+  "date": "2026-11-23T14:38:52.121Z",
+  "detection": "Vision (macOS) + mesures sharp",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "logo.jpg",
+      "nom": "logo",
+      "drapeau": "logo",
+      "largeur": 960,
+      "hauteur": 798,
+      "ratio": "1.2",
+      "ratio_valeur": 1.203,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 42551,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0.5,
+        "l": 94.9,
+        "h": 83.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        42
+      ],
+      "cadrage_css": "43% 42%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "haut",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        }
+      ],
+      "qualite": {
+        "nettete": 32.9,
+        "bruit": 0.33,
+        "compression": 1.47,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": {
+        "niveau": "logo",
+        "a_verifier": false,
+        "texte": "seRvices a · La peRsonne",
+        "blocs": 2,
+        "surface": 28.3,
+        "details": [
+          {
+            "texte": "seRvices a",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "La peRsonne",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "39110d95d1550303",
+      "drapeaux": [
+        "logo",
+        "compression visible",
+        "texte du logo"
+      ]
+    },
+    {
+      "fichier": "citrus-fruits.jpg",
+      "nom": "citrus-fruits",
+      "drapeau": "autre",
+      "largeur": 1333,
+      "hauteur": 2000,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 260745,
+      "transparence": false,
+      "sujet": {
+        "x": 4.6,
+        "y": 34.9,
+        "l": 74.8,
+        "h": 48.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        52
+      ],
+      "cadrage_css": "45% 52%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.73,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.59,
+          "ton": "clair",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "droite",
+          "score": 0.47,
+          "ton": "clair",
+          "recouvre_sujet": 0.23
+        },
+        {
+          "cote": "gauche",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0.43
+        }
+      ],
+      "qualite": {
+        "nettete": 12.7,
+        "bruit": 0.59,
+        "compression": 0.93,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "5353421c256f3300",
+      "drapeaux": [
+        "autre",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "salle-bain-elegante.jpg",
+      "nom": "salle-bain-elegante",
+      "drapeau": "lieu",
+      "largeur": 2000,
+      "hauteur": 1328,
+      "ratio": "3:2",
+      "ratio_valeur": 1.506,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 232173,
+      "transparence": false,
+      "sujet": {
+        "x": 39.7,
+        "y": 27.9,
+        "l": 33.8,
+        "h": 33.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        57,
+        45
+      ],
+      "cadrage_css": "57% 45%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.47,
+          "ton": "moyen",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "bas",
+          "score": 0.45,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.43,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.34,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        }
+      ],
+      "qualite": {
+        "nettete": 21.9,
+        "bruit": 0.51,
+        "compression": 1.23,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "c74767f7b7171300",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "philosophie.jpg",
+      "nom": "philosophie",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 451610,
+      "transparence": false,
+      "sujet": {
+        "x": 39.6,
+        "y": 46.7,
+        "l": 55.2,
+        "h": 32.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        63,
+        60
+      ],
+      "cadrage_css": "63% 60%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.82,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.78,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.6,
+          "ton": "moyen",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "droite",
+          "score": 0.51,
+          "ton": "sombre",
+          "recouvre_sujet": 0.28
+        }
+      ],
+      "qualite": {
+        "nettete": 19,
+        "bruit": 1.06,
+        "compression": 1.41,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "60c0c0c0d8b2e0f0",
+      "drapeaux": [
+        "autre",
+        "calme haut/gauche"
+      ]
+    },
+    {
+      "fichier": "entretiens-exterieurs.jpg",
+      "nom": "entretiens-exterieurs",
+      "drapeau": "lieu",
+      "largeur": 2000,
+      "hauteur": 1500,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 811770,
+      "transparence": false,
+      "sujet": {
+        "x": 19.1,
+        "y": 29.4,
+        "l": 51.5,
+        "h": 44.1,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        50
+      ],
+      "cadrage_css": "46% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.41,
+          "ton": "moyen",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "bas",
+          "score": 0.38,
+          "ton": "sombre",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.23
+        }
+      ],
+      "qualite": {
+        "nettete": 71,
+        "bruit": 2.16,
+        "compression": 1.13,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "72b9d096c898da71",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "sommes-nous.jpg",
+      "nom": "sommes-nous",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1500,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 963741,
+      "transparence": false,
+      "sujet": {
+        "x": 0.2,
+        "y": 32.2,
+        "l": 35.1,
+        "h": 50.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        27,
+        55
+      ],
+      "cadrage_css": "27% 55%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "bas",
+          "score": 0.19,
+          "ton": "moyen",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "gauche",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.44
+        }
+      ],
+      "qualite": {
+        "nettete": 89.4,
+        "bruit": 2.08,
+        "compression": 1.12,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "Siret: 90960173400017 · Tel:06 875468347",
+        "blocs": 2,
+        "surface": 0.2,
+        "details": [
+          {
+            "texte": "Siret: 90960173400017",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Tel:06 875468347",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "d8d8e1843cd832c6",
+      "drapeaux": [
+        "autre",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "vous-assister-quotidien.jpg",
+      "nom": "vous-assister-quotidien",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1097,
+      "ratio": "1.82",
+      "ratio_valeur": 1.823,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 456212,
+      "transparence": false,
+      "sujet": {
+        "x": 2.9,
+        "y": 6.2,
+        "l": 97.1,
+        "h": 69.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        41
+      ],
+      "cadrage_css": "44% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.23,
+          "ton": "sombre",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "gauche",
+          "score": 0.03,
+          "ton": "sombre",
+          "recouvre_sujet": 0.64
+        },
+        {
+          "cote": "droite",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.8
+        }
+      ],
+      "qualite": {
+        "nettete": 42.4,
+        "bruit": 0.94,
+        "compression": 1.16,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "document",
+        "a_verifier": true,
+        "texte": "06 87 54 68 88 · ATOUS CŒUR Jerome · sannier.jerome · ATOUSCOEUR JEROME · Ménage intérieur · Travaux de jardinage · Accompagnement · Aide administrative · Aide ",
+        "blocs": 9,
+        "surface": 14.6,
+        "details": [
+          {
+            "texte": "06 87 54 68 88",
+            "niveau": "document"
+          },
+          {
+            "texte": "ATOUS CŒUR Jerome",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "sannier.jerome",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "ATOUSCOEUR JEROME",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Ménage intérieur",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Travaux de jardinage",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Accompagnement",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Aide administrative",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Aide aux repas",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "953a7671392fa9af",
+      "drapeaux": [
+        "autre",
+        "document lisible"
+      ]
+    },
+    {
+      "fichier": "avance-immediate-urssaf.jpg",
+      "nom": "avance-immediate-urssaf",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1333,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 329787,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 12.9,
+        "l": 100,
+        "h": 61.4,
+        "source": "visage"
+      },
+      "visages": 2,
+      "cadrage": [
+        50,
+        46
+      ],
+      "cadrage_css": "50% 46%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "haut",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.63
+        },
+        {
+          "cote": "gauche",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "droite",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        }
+      ],
+      "qualite": {
+        "nettete": 39.3,
+        "bruit": 0.54,
+        "compression": 1.07,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "• Urssaf · DÉPENSEZ · 50 EUROS · PAYEZ · 25 EUROS · TOUT EST DIT. · + d'infos sur l'Avance immédiate de crédit d'impôt pour les services à la personne sur · ava",
+        "blocs": 8,
+        "surface": 19,
+        "details": [
+          {
+            "texte": "• Urssaf",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "DÉPENSEZ",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "50 EUROS",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "PAYEZ",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "25 EUROS",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "TOUT EST DIT.",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "+ d'infos sur l'Avance immédiate de crédit d'impôt pour les services à la personne sur",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "avanceimmediate.urssaf.fr",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "66694d6d4941910c",
+      "drapeaux": [
+        "autre",
+        "2 visages",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "bright-living-space.jpg",
+      "nom": "bright-living-space",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1363,
+      "ratio": "3:2",
+      "ratio_valeur": 1.467,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 274389,
+      "transparence": false,
+      "sujet": {
+        "x": 5,
+        "y": 46.6,
+        "l": 77.3,
+        "h": 33.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        57
+      ],
+      "cadrage_css": "47% 57%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.74,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0.19
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "bas",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 0.33
+        }
+      ],
+      "qualite": {
+        "nettete": 41,
+        "bruit": 0.5,
+        "compression": 1.15,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "5ad2d2786372f263",
+      "drapeaux": [
+        "autre",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "entretien-exterieur.jpg",
+      "nom": "entretien-exterieur",
+      "drapeau": "lieu",
+      "largeur": 2000,
+      "hauteur": 1500,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 555901,
+      "transparence": false,
+      "sujet": {
+        "x": 0.7,
+        "y": 16.3,
+        "l": 96.5,
+        "h": 70.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        43
+      ],
+      "cadrage_css": "45% 43%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.52
+        },
+        {
+          "cote": "bas",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 0.59
+        },
+        {
+          "cote": "droite",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        }
+      ],
+      "qualite": {
+        "nettete": 53,
+        "bruit": 1.18,
+        "compression": 1.18,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "Gie Pôle Santé Du Parc- · ATOUS COUR · services à la personne",
+        "blocs": 3,
+        "surface": 5.1,
+        "details": [
+          {
+            "texte": "Gie Pôle Santé Du Parc-",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "ATOUS COUR",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "services à la personne",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "ccc2f03f0d602bab",
+      "drapeaux": [
+        "lieu",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "vous-assister-quotidien-2.jpg",
+      "nom": "vous-assister-quotidien-2",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1080,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 24705,
+      "transparence": false,
+      "sujet": {
+        "x": 36.8,
+        "y": 25,
+        "l": 25,
+        "h": 32.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        41
+      ],
+      "cadrage_css": "49% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 1,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.99,
+          "ton": "clair",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "droite",
+          "score": 0.99,
+          "ton": "clair",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "haut",
+          "score": 0.98,
+          "ton": "clair",
+          "recouvre_sujet": 0.07
+        }
+      ],
+      "qualite": {
+        "nettete": 0,
+        "bruit": 0,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "floue"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "0000000000000000",
+      "drapeaux": [
+        "autre",
+        "floue",
+        "calme bas/gauche/droite/haut"
+      ]
+    }
+  ]
+}

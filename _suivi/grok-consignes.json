@@ -1,0 +1,153 @@
+{
+  "client": "ATOUS CŒUR",
+  "activite": "autre",
+  "direction": "Les couleurs de la voiture",
+  "date": "2026-11-23T14:48:10.522Z",
+  "images": [
+    {
+      "nom": "menage",
+      "fichier": "menage.jpg",
+      "page": "accueil",
+      "emplacement": "Services : carte Ménage intérieur (aussi page Services)",
+      "role": "carte-service",
+      "format": "16:10",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A bright, freshly cleaned kitchen in an old village house in the morning: the terracotta tiled floor still slightly shining, a clean wooden table, a folded tea towel on the back of a chair, a bucket and a mop leaning quietly by the door to the garden, nobody. Aspect ratio 16:10, main subject well inside the central area with generous margins on every side, so the image can be cropped. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "jardin",
+      "fichier": "jardin.jpg",
+      "page": "accueil",
+      "emplacement": "Services : carte Jardin et extérieurs (aussi page Services)",
+      "role": "carte-service",
+      "format": "16:10",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A small village garden just tidied up: a freshly mown lawn with neat stripes, a low hedge cleanly trimmed, a green wheelbarrow full of cut grass with a rake leaning on it, an old brick wall behind, nobody. Aspect ratio 16:10, main subject well inside the central area with generous margins on every side, so the image can be cropped. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "courses",
+      "fichier": "courses.jpg",
+      "page": "accueil",
+      "emplacement": "Services : carte Courses (aussi page Services)",
+      "role": "carte-service",
+      "format": "16:10",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "Two plain brown paper grocery bags just set down on a wooden kitchen table by a window, leeks, apples, a round loaf of bread and a bunch of carrots peeking out, a set of house keys beside them, nobody. Aspect ratio 16:10, main subject well inside the central area with generous margins on every side, so the image can be cropped. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "repas",
+      "fichier": "repas.jpg",
+      "page": "accueil",
+      "emplacement": "Services : carte Repas (aussi page Services)",
+      "role": "carte-service",
+      "format": "16:10",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A simple home-cooked vegetable soup gently simmering in a cream enamel pot on an old kitchen stove, soft steam rising, a wooden chopping board with sliced carrots and a ladle beside it, homely and appetising, nobody. Aspect ratio 16:10, main subject well inside the central area with generous margins on every side, so the image can be cropped. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "papiers",
+      "fichier": "papiers.jpg",
+      "page": "accueil",
+      "emplacement": "Services : carte Papiers (aussi page Services)",
+      "role": "carte-service",
+      "format": "16:10",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A tidy kitchen table near a window with a closed cardboard folder, a few plain sealed envelopes without any writing, a pair of reading glasses and a cup of tea, everything calm and in order, nothing readable, nobody. Aspect ratio 16:10, main subject well inside the central area with generous margins on every side, so the image can be cropped. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "calme",
+      "fichier": "calme.jpg",
+      "page": "accueil",
+      "emplacement": "Accueil : nos engagements (fond)",
+      "role": "section-fond",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "section-fond",
+      "pieges": [],
+      "consigne": "A quiet living room in a village house: a comfortable old armchair with a knitted blanket beside a tall window with light lace curtains, a cup of tea and a pair of glasses on the windowsill, green plants, a garden softly visible outside, the left half of the frame calm and uncluttered, nobody. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "services-ouverture",
+      "fichier": "services-ouverture.jpg",
+      "page": "services",
+      "emplacement": "Page Services : ouverture (image à droite du titre)",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "The sunny entrance of a village house seen from inside: the front door wide open onto a garden path, a wicker basket of vegetables on the floor, a broom leaning against the wall, a coat on a hook, warm and welcoming, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "cles",
+      "fichier": "cles.jpg",
+      "page": "jerome",
+      "emplacement": "Page Jérôme : engagements (vie privée, confiance)",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A bunch of old house keys hanging on a small wooden key hook next to a front door, a soft beam of morning light, a red knitted scarf on the next hook, simple and trustworthy, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "porte",
+      "fichier": "porte.jpg",
+      "page": "reserver",
+      "emplacement": "Page Réserver : image à côté de l'outil de réservation",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A wooden garden gate slightly open onto a short gravel path leading to the front door of a village house, a doormat, flower pots, soft morning light, inviting, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "telephone",
+      "fichier": "telephone.jpg",
+      "page": "contact",
+      "emplacement": "Page Contact : ouverture (image à côté du numéro)",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "écrans"
+      ],
+      "consigne": "A cream cordless home telephone resting on its base on a small wooden hall console, a little dish for keys and a plant next to it, a sunny window behind, homely, the phone has no screen content and no buttons with readable numbers, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. Screen turned away from the camera, or showing only a soft abstract glow with no interface; plain unbranded devices. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "page-404",
+      "fichier": "404.jpg",
+      "page": "404",
+      "emplacement": "Page 404 (introuvable)",
+      "role": "404",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "404",
+      "pieges": [],
+      "consigne": "A single plain brown paper grocery bag standing alone in the middle of an empty kitchen table, one apple rolled away from it, soft side light and a long shadow, lots of calm empty space above, a gentle touch of humour, nobody. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Modern editorial documentary photograph, natural soft light, warm, honest and reassuring mood, palette of warm off-white, soft linen beige, natural greens, with small touches of deep aubergine and bright red, soft natural daylight coming through a window, tactile painted wood, linen, terracotta tiles, old brick and pale stone, set in a modest village house in the countryside of northern France on a bright mild morning, subtle 35mm film grain, shallow depth of field, calm composition with generous negative space, photorealistic, high detail. No product, no artwork, no document or screen with readable content, no place presented as the client's real premises, no stock-photo cliché, no handshake, nobody looking at the camera. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

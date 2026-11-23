@@ -1,0 +1,1152 @@
+{
+  "accueil-ouverture": {
+    "nom": "accueil-ouverture",
+    "source": "recu/entretiens-exterieurs.jpg",
+    "role": "ouverture",
+    "alt": "Un jardin fraîchement tondu par Jérôme, au-dessus des toits d'un village de l'Oise, sous un grand ciel bleu",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "c53b6ed0a126cb77",
+    "ratio": null,
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 52%"
+    },
+    "cadrage": "42% 52%",
+    "sujet": {
+      "x": 19.1,
+      "y": 29.4,
+      "l": 51.5,
+      "h": 44.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.41,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.38,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.31,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "bas",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1500,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-ouverture-640.webp",
+      "accueil-ouverture-1280.webp",
+      "accueil-ouverture-1920.webp",
+      "accueil-ouverture-mobile-640.webp",
+      "accueil-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "accueil-ouverture-640.webp": 70374,
+      "accueil-ouverture-1280.webp": 262112,
+      "accueil-ouverture-1920.webp": 334442,
+      "accueil-ouverture-mobile-640.webp": 163638,
+      "accueil-ouverture-mobile-1080.webp": 271316
+    },
+    "media": "c.media({ nom: 'accueil-ouverture', alt: \"Un jardin fraîchement tondu par Jérôme, au-dessus des toits d'un village de l'Oise, sous un grand ciel bleu\", cadrage: '42% 52%', cadrageMobile: '50% 52%', sizes: '100vw', priorite: true })"
+  },
+  "jardin-bandeau": {
+    "nom": "jardin-bandeau",
+    "source": "recu/entretiens-exterieurs.jpg",
+    "role": "section-fond",
+    "alt": "Le jardin tondu par Jérôme, débroussailleuse posée dans l'herbe, au-dessus d'un village de l'Oise",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "dfa31fccdc0840c5",
+    "ratio": "2:1",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 55%"
+    },
+    "cadrage": "42% 50%",
+    "sujet": {
+      "x": 19.1,
+      "y": 11.6,
+      "l": 51.5,
+      "h": 66.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.41,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.38,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.31,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 325,
+      "width": 2000,
+      "height": 1000,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "jardin-bandeau-640.webp",
+      "jardin-bandeau-1280.webp",
+      "jardin-bandeau-1920.webp",
+      "jardin-bandeau-mobile-640.webp",
+      "jardin-bandeau-mobile-1080.webp"
+    ],
+    "poids": {
+      "jardin-bandeau-640.webp": 53838,
+      "jardin-bandeau-1280.webp": 208050,
+      "jardin-bandeau-1920.webp": 288636,
+      "jardin-bandeau-mobile-640.webp": 121176,
+      "jardin-bandeau-mobile-1080.webp": 306530
+    },
+    "media": "c.media({ nom: 'jardin-bandeau', alt: \"Le jardin tondu par Jérôme, débroussailleuse posée dans l'herbe, au-dessus d'un village de l'Oise\", cadrage: '42% 50%', cadrageMobile: '50% 55%', sizes: '100vw' })"
+  },
+  "voiture": {
+    "nom": "voiture",
+    "source": "recu/vous-assister-quotidien.jpg",
+    "role": "galerie",
+    "alt": "La voiture blanche d'ATOUS CŒUR, barrée d'une bande rouge et violette, avec les services et le numéro de Jérôme sur la portière",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "bbe7b80df14b3295",
+    "ratio": "16:10",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 48%",
+    "sujet": {
+      "x": 0,
+      "y": 6.2,
+      "l": 100,
+      "h": 69.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.23,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.03,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 83,
+      "top": 0,
+      "width": 1755,
+      "height": 1097,
+      "source": [
+        2000,
+        1097
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "voiture-1024.webp",
+      "voiture-1168.webp",
+      "voiture-1600.webp"
+    ],
+    "poids": {
+      "voiture-1024.webp": 111822,
+      "voiture-1168.webp": 133658,
+      "voiture-1600.webp": 190178
+    },
+    "media": "c.media({ nom: 'voiture', alt: \"La voiture blanche d'ATOUS CŒUR, barrée d'une bande rouge et violette, avec les services et le numéro de Jérôme sur la portière\", cadrage: '50% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '16 / 10' })"
+  },
+  "route": {
+    "nom": "route",
+    "source": "recu/sommes-nous.jpg",
+    "role": "galerie",
+    "alt": "La voiture d'ATOUS CŒUR sur un chemin de campagne, près d'une longère, entre les saules",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "8b614dffa85b6cd8",
+    "ratio": "4:3",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "40% 55%",
+    "sujet": {
+      "x": 0.2,
+      "y": 32.2,
+      "l": 35.1,
+      "h": 50.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.31,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1500,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "route-1024.webp",
+      "route-1168.webp",
+      "route-1600.webp"
+    ],
+    "poids": {
+      "route-1024.webp": 200514,
+      "route-1168.webp": 260694,
+      "route-1600.webp": 329324
+    },
+    "media": "c.media({ nom: 'route', alt: \"La voiture d'ATOUS CŒUR sur un chemin de campagne, près d'une longère, entre les saules\", cadrage: '40% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "rendez-vous": {
+    "nom": "rendez-vous",
+    "source": "recu/entretien-exterieur.jpg",
+    "role": "carte-service",
+    "alt": "La voiture d'ATOUS CŒUR devant un pôle santé, pour un accompagnement à un rendez-vous",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "900bbd0a30bd474f",
+    "ratio": "16:10",
+    "largeurs": [
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 0.7,
+      "y": 0,
+      "l": 96.5,
+      "h": 84.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.08,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 245,
+      "width": 2000,
+      "height": 1250,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "rendez-vous-1168.webp"
+    ],
+    "poids": {
+      "rendez-vous-1168.webp": 112008
+    },
+    "media": "c.media({ nom: 'rendez-vous', alt: \"La voiture d'ATOUS CŒUR devant un pôle santé, pour un accompagnement à un rendez-vous\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '16 / 10' })"
+  },
+  "grok/menage": {
+    "nom": "grok/menage",
+    "source": "recu/grok/menage.jpg",
+    "role": "carte-service",
+    "alt": "Cuisine de village fraîchement nettoyée, seau et balai posés près de la porte",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "536811b8131add5d",
+    "ratio": "16:10",
+    "largeurs": [
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "53% 51%",
+    "sujet": {
+      "x": 3.1,
+      "y": 2.3,
+      "l": 93.8,
+      "h": 92.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 76,
+      "width": 1635,
+      "height": 1022,
+      "source": [
+        1635,
+        1098
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/menage-1168.webp"
+    ],
+    "poids": {
+      "grok/menage-1168.webp": 67110
+    },
+    "media": "c.media({ nom: 'grok/menage', alt: \"Cuisine de village fraîchement nettoyée, seau et balai posés près de la porte\", cadrage: '53% 51%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '16 / 10' })"
+  },
+  "grok/jardin": {
+    "nom": "grok/jardin",
+    "source": "recu/grok/jardin.jpg",
+    "role": "carte-service",
+    "alt": "Pelouse tondue, haie taillée et brouette d'herbe coupée dans un jardin de village",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "adc56f497fb635cb",
+    "ratio": "16:10",
+    "largeurs": [
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "47% 43%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1635,
+      "height": 1022,
+      "source": [
+        1635,
+        1098
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/jardin-1168.webp"
+    ],
+    "poids": {
+      "grok/jardin-1168.webp": 187498
+    },
+    "media": "c.media({ nom: 'grok/jardin', alt: \"Pelouse tondue, haie taillée et brouette d'herbe coupée dans un jardin de village\", cadrage: '47% 43%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '16 / 10' })"
+  },
+  "grok/courses": {
+    "nom": "grok/courses",
+    "source": "recu/grok/courses.jpg",
+    "role": "carte-service",
+    "alt": "Deux sacs de courses posés sur la table de la cuisine, pain, poireaux et pommes",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "9ab3334cfea8439b",
+    "ratio": "16:10",
+    "largeurs": [
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "43% 46%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1635,
+      "height": 1022,
+      "source": [
+        1635,
+        1098
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/courses-1168.webp"
+    ],
+    "poids": {
+      "grok/courses-1168.webp": 73660
+    },
+    "media": "c.media({ nom: 'grok/courses', alt: \"Deux sacs de courses posés sur la table de la cuisine, pain, poireaux et pommes\", cadrage: '43% 46%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '16 / 10' })"
+  },
+  "grok/repas": {
+    "nom": "grok/repas",
+    "source": "recu/grok/repas.jpg",
+    "role": "carte-service",
+    "alt": "Une soupe de légumes qui mijote dans une cocotte émaillée",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "936087646cee3144",
+    "ratio": "16:10",
+    "largeurs": [
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "44% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.1,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 60,
+      "width": 1635,
+      "height": 1022,
+      "source": [
+        1635,
+        1098
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/repas-1168.webp"
+    ],
+    "poids": {
+      "grok/repas-1168.webp": 78184
+    },
+    "media": "c.media({ nom: 'grok/repas', alt: \"Une soupe de légumes qui mijote dans une cocotte émaillée\", cadrage: '44% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '16 / 10' })"
+  },
+  "grok/papiers": {
+    "nom": "grok/papiers",
+    "source": "recu/grok/papiers.jpg",
+    "role": "carte-service",
+    "alt": "Dossier fermé, enveloppes et lunettes rangés sur la table, près d'une tasse de thé",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "b8f192c4da1a5ba5",
+    "ratio": "16:10",
+    "largeurs": [
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "48% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 5,
+      "width": 1635,
+      "height": 1022,
+      "source": [
+        1635,
+        1098
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/papiers-1168.webp"
+    ],
+    "poids": {
+      "grok/papiers-1168.webp": 56998
+    },
+    "media": "c.media({ nom: 'grok/papiers', alt: \"Dossier fermé, enveloppes et lunettes rangés sur la table, près d'une tasse de thé\", cadrage: '48% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '16 / 10' })"
+  },
+  "grok/calme": {
+    "nom": "grok/calme",
+    "source": "recu/grok/calme.jpg",
+    "role": "section-fond",
+    "alt": "Fauteuil près de la fenêtre, tasse de thé sur le rebord, dans un salon paisible",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "4a4651795ea13165",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1600
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 52%"
+    },
+    "cadrage": "71% 50%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 96.9,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.42,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.12,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 111,
+      "width": 1635,
+      "height": 920,
+      "source": [
+        1635,
+        1098
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "grok/calme-640.webp",
+      "grok/calme-1280.webp",
+      "grok/calme-1600.webp",
+      "grok/calme-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/calme-640.webp": 29692,
+      "grok/calme-1280.webp": 94404,
+      "grok/calme-1600.webp": 129166,
+      "grok/calme-mobile-640.webp": 86350
+    },
+    "media": "c.media({ nom: 'grok/calme', alt: \"Fauteuil près de la fenêtre, tasse de thé sur le rebord, dans un salon paisible\", cadrage: '71% 50%', cadrageMobile: '50% 52%', sizes: '100vw' })"
+  },
+  "grok/services-ouverture": {
+    "nom": "grok/services-ouverture",
+    "source": "recu/grok/services-ouverture.jpg",
+    "role": "galerie",
+    "alt": "Entrée d'une maison de village, porte ouverte sur le jardin, panier de légumes",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "6ef0550460b5354e",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "48% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 97.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 299,
+      "width": 1334,
+      "height": 1668,
+      "source": [
+        1334,
+        1987
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1334 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/services-ouverture-1024.webp",
+      "grok/services-ouverture-1168.webp",
+      "grok/services-ouverture-1600.webp"
+    ],
+    "poids": {
+      "grok/services-ouverture-1024.webp": 128976,
+      "grok/services-ouverture-1168.webp": 150930,
+      "grok/services-ouverture-1600.webp": 219032
+    },
+    "media": "c.media({ nom: 'grok/services-ouverture', alt: \"Entrée d'une maison de village, porte ouverte sur le jardin, panier de légumes\", cadrage: '48% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/cles": {
+    "nom": "grok/cles",
+    "source": "recu/grok/cles.jpg",
+    "role": "galerie",
+    "alt": "Un trousseau de clés accroché près de la porte d'entrée",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "225704b5cee4ac6e",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "54% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 179,
+      "width": 1334,
+      "height": 1668,
+      "source": [
+        1334,
+        1987
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1334 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/cles-1024.webp",
+      "grok/cles-1168.webp",
+      "grok/cles-1600.webp"
+    ],
+    "poids": {
+      "grok/cles-1024.webp": 95196,
+      "grok/cles-1168.webp": 111846,
+      "grok/cles-1600.webp": 166554
+    },
+    "media": "c.media({ nom: 'grok/cles', alt: \"Un trousseau de clés accroché près de la porte d'entrée\", cadrage: '54% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/porte": {
+    "nom": "grok/porte",
+    "source": "recu/grok/porte.jpg",
+    "role": "galerie",
+    "alt": "Portillon entrouvert sur l'allée d'une maison de village",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "539457c99a4f15b9",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "56% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 20,
+      "width": 1334,
+      "height": 1668,
+      "source": [
+        1334,
+        1987
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1334 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/porte-1024.webp",
+      "grok/porte-1168.webp",
+      "grok/porte-1600.webp"
+    ],
+    "poids": {
+      "grok/porte-1024.webp": 169636,
+      "grok/porte-1168.webp": 195728,
+      "grok/porte-1600.webp": 273646
+    },
+    "media": "c.media({ nom: 'grok/porte', alt: \"Portillon entrouvert sur l'allée d'une maison de village\", cadrage: '56% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/telephone": {
+    "nom": "grok/telephone",
+    "source": "recu/grok/telephone.jpg",
+    "role": "galerie",
+    "alt": "Le téléphone de la maison posé sur la console de l'entrée",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "87ee590dfd855afd",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "54% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.13,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 80,
+      "width": 1334,
+      "height": 1668,
+      "source": [
+        1334,
+        1987
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1334 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/telephone-1024.webp",
+      "grok/telephone-1168.webp",
+      "grok/telephone-1600.webp"
+    ],
+    "poids": {
+      "grok/telephone-1024.webp": 65838,
+      "grok/telephone-1168.webp": 77342,
+      "grok/telephone-1600.webp": 113498
+    },
+    "media": "c.media({ nom: 'grok/telephone', alt: \"Le téléphone de la maison posé sur la console de l'entrée\", cadrage: '54% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/page-404": {
+    "nom": "grok/page-404",
+    "source": "recu/grok/404.jpg",
+    "role": "404",
+    "alt": "Un sac de courses seul sur la table de la cuisine, une pomme qui a roulé",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "a7feb7e07a580118",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1600
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 59%"
+    },
+    "cadrage": "49% 66%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.29,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 41,
+      "width": 1635,
+      "height": 920,
+      "source": [
+        1635,
+        1098
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "grok/page-404-640.webp",
+      "grok/page-404-1280.webp",
+      "grok/page-404-1600.webp",
+      "grok/page-404-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/page-404-640.webp": 16982,
+      "grok/page-404-1280.webp": 46952,
+      "grok/page-404-1600.webp": 65582,
+      "grok/page-404-mobile-640.webp": 32350
+    },
+    "media": "c.media({ nom: 'grok/page-404', alt: \"Un sac de courses seul sur la table de la cuisine, une pomme qui a roulé\", cadrage: '49% 66%', cadrageMobile: '50% 59%', sizes: '100vw', ratio: '16 / 9' })"
+  }
+}

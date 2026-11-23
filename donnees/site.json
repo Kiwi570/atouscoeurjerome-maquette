@@ -1,0 +1,15 @@
+{
+  "nom": "ATOUS CŒUR",
+  "adresse": "https://atouscoeurjerome-maquette.vercel.app",
+  "siteActuel": "www.atouscoeurjerome.com",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "services", "jerome", "reserver", "contact"],
+  "actionEntete": { "page": "reserver" },
+  "couleurs": { "fond": "#FBF7F2", "texte": "#1E1622", "voile": "#2D1838", "ouverture": "#2D1838", "menu": "#2D1838", "theme": "#FBF7F2" },
+  "formeVoile": "glisse",
+  "contact": { "telephone": "06 87 54 68 88", "telephoneLien": "+33687546888", "email": "jeromesannier@yahoo.fr", "adresse": "Hondainville (Oise)" },
+  "polices": ["/assets/fonts/bricolage.woff2", "/assets/fonts/atkinson-400.woff2"],
+  "imagePartage": "accueil-ouverture-1280.webp",
+  "curseur": false
+}

@@ -1,0 +1,217 @@
+[
+ {
+  "source": "recu/entretiens-exterieurs.jpg",
+  "nom": "accueil-ouverture",
+  "role": "ouverture",
+  "page": "accueil",
+  "beaute": 4,
+  "mobile": true,
+  "zone_texte": "bas",
+  "cadrage": [
+   42,
+   52
+  ],
+  "alt": "Un jardin fraîchement tondu par Jérôme, au-dessus des toits d'un village de l'Oise, sous un grand ciel bleu"
+ },
+ {
+  "source": "recu/entretiens-exterieurs.jpg",
+  "nom": "jardin-bandeau",
+  "role": "section-fond",
+  "page": "jerome",
+  "ratio": "2:1",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "beaute": 4,
+  "mobile": "4:5",
+  "cadrage": [
+   42,
+   55
+  ],
+  "alt": "Le jardin tondu par Jérôme, débroussailleuse posée dans l'herbe, au-dessus d'un village de l'Oise"
+ },
+ {
+  "source": "recu/vous-assister-quotidien.jpg",
+  "nom": "voiture",
+  "role": "galerie",
+  "ratio": "16:10",
+  "beaute": 4,
+  "cadrage": [
+   48,
+   48
+  ],
+  "alt": "La voiture blanche d'ATOUS CŒUR, barrée d'une bande rouge et violette, avec les services et le numéro de Jérôme sur la portière"
+ },
+ {
+  "source": "recu/sommes-nous.jpg",
+  "nom": "route",
+  "role": "galerie",
+  "ratio": "4:3",
+  "beaute": 3,
+  "cadrage": [
+   40,
+   55
+  ],
+  "alt": "La voiture d'ATOUS CŒUR sur un chemin de campagne, près d'une longère, entre les saules"
+ },
+ {
+  "source": "recu/entretien-exterieur.jpg",
+  "nom": "rendez-vous",
+  "role": "carte-service",
+  "ratio": "16:10",
+  "beaute": 3,
+  "cadrage": [
+   50,
+   62
+  ],
+  "alt": "La voiture d'ATOUS CŒUR devant un pôle santé, pour un accompagnement à un rendez-vous"
+ },
+ {
+  "source": "recu/grok/menage.jpg",
+  "nom": "grok/menage",
+  "role": "carte-service",
+  "ratio": "16:10",
+  "page": "accueil",
+  "emplacement": "Services : carte Ménage intérieur (aussi page Services)",
+  "priorite": "Indispensable",
+  "consigne_scene": "A bright, freshly cleaned kitchen in an old village house in the morning: the terracotta tiled floor still slightly shining, a clean wooden table, a folded tea towel on the back of a chair, a bucket and a mop leaning quietly by the door to the garden, nobody",
+  "alt": "Cuisine de village fraîchement nettoyée, seau et balai posés près de la porte",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/jardin.jpg",
+  "nom": "grok/jardin",
+  "role": "carte-service",
+  "ratio": "16:10",
+  "page": "accueil",
+  "emplacement": "Services : carte Jardin et extérieurs (aussi page Services)",
+  "priorite": "Indispensable",
+  "consigne_scene": "A small village garden just tidied up: a freshly mown lawn with neat stripes, a low hedge cleanly trimmed, a green wheelbarrow full of cut grass with a rake leaning on it, an old brick wall behind, nobody",
+  "alt": "Pelouse tondue, haie taillée et brouette d'herbe coupée dans un jardin de village",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/courses.jpg",
+  "nom": "grok/courses",
+  "role": "carte-service",
+  "ratio": "16:10",
+  "page": "accueil",
+  "emplacement": "Services : carte Courses (aussi page Services)",
+  "priorite": "Indispensable",
+  "consigne_scene": "Two plain brown paper grocery bags just set down on a wooden kitchen table by a window, leeks, apples, a round loaf of bread and a bunch of carrots peeking out, a set of house keys beside them, nobody",
+  "alt": "Deux sacs de courses posés sur la table de la cuisine, pain, poireaux et pommes",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/repas.jpg",
+  "nom": "grok/repas",
+  "role": "carte-service",
+  "ratio": "16:10",
+  "page": "accueil",
+  "emplacement": "Services : carte Repas (aussi page Services)",
+  "priorite": "Indispensable",
+  "consigne_scene": "A simple home-cooked vegetable soup gently simmering in a cream enamel pot on an old kitchen stove, soft steam rising, a wooden chopping board with sliced carrots and a ladle beside it, homely and appetising, nobody",
+  "alt": "Une soupe de légumes qui mijote dans une cocotte émaillée",
+  "beaute": 5
+ },
+ {
+  "source": "recu/grok/papiers.jpg",
+  "nom": "grok/papiers",
+  "role": "carte-service",
+  "ratio": "16:10",
+  "page": "accueil",
+  "emplacement": "Services : carte Papiers (aussi page Services)",
+  "priorite": "Indispensable",
+  "consigne_scene": "A tidy kitchen table near a window with a closed cardboard folder, a few plain sealed envelopes without any writing, a pair of reading glasses and a cup of tea, everything calm and in order, nothing readable, nobody",
+  "alt": "Dossier fermé, enveloppes et lunettes rangés sur la table, près d'une tasse de thé",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/calme.jpg",
+  "nom": "grok/calme",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "page": "accueil",
+  "emplacement": "Accueil : nos engagements (fond)",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "mobile": true,
+  "consigne_scene": "A quiet living room in a village house: a comfortable old armchair with a knitted blanket beside a tall window with light lace curtains, a cup of tea and a pair of glasses on the windowsill, green plants, a garden softly visible outside, the left half of the frame calm and uncluttered, nobody",
+  "alt": "Fauteuil près de la fenêtre, tasse de thé sur le rebord, dans un salon paisible",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ]
+ },
+ {
+  "source": "recu/grok/services-ouverture.jpg",
+  "nom": "grok/services-ouverture",
+  "role": "galerie",
+  "ratio": "4:5",
+  "page": "services",
+  "emplacement": "Page Services : ouverture (image à droite du titre)",
+  "priorite": "Indispensable",
+  "consigne_scene": "The sunny entrance of a village house seen from inside: the front door wide open onto a garden path, a wicker basket of vegetables on the floor, a broom leaning against the wall, a coat on a hook, warm and welcoming, nobody",
+  "alt": "Entrée d'une maison de village, porte ouverte sur le jardin, panier de légumes",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/cles.jpg",
+  "nom": "grok/cles",
+  "role": "galerie",
+  "ratio": "4:5",
+  "page": "jerome",
+  "emplacement": "Page Jérôme : engagements (vie privée, confiance)",
+  "priorite": "Conseillée",
+  "consigne_scene": "A bunch of old house keys hanging on a small wooden key hook next to a front door, a soft beam of morning light, a red knitted scarf on the next hook, simple and trustworthy, nobody",
+  "alt": "Un trousseau de clés accroché près de la porte d'entrée",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/porte.jpg",
+  "nom": "grok/porte",
+  "role": "galerie",
+  "ratio": "4:5",
+  "page": "reserver",
+  "emplacement": "Page Réserver : image à côté de l'outil de réservation",
+  "priorite": "Conseillée",
+  "consigne_scene": "A wooden garden gate slightly open onto a short gravel path leading to the front door of a village house, a doormat, flower pots, soft morning light, inviting, nobody",
+  "alt": "Portillon entrouvert sur l'allée d'une maison de village",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/telephone.jpg",
+  "nom": "grok/telephone",
+  "role": "galerie",
+  "ratio": "4:5",
+  "page": "contact",
+  "emplacement": "Page Contact : ouverture (image à côté du numéro)",
+  "priorite": "Conseillée",
+  "consigne_scene": "A cream cordless home telephone resting on its base on a small wooden hall console, a little dish for keys and a plant next to it, a sunny window behind, homely, the phone has no screen content and no buttons with readable numbers, nobody",
+  "alt": "Le téléphone de la maison posé sur la console de l'entrée",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/404.jpg",
+  "nom": "grok/page-404",
+  "role": "404",
+  "ratio": "16:9",
+  "page": "404",
+  "emplacement": "Page 404 (introuvable)",
+  "priorite": "Conseillée",
+  "mobile": true,
+  "zone_texte": "haut",
+  "consigne_scene": "A single plain brown paper grocery bag standing alone in the middle of an empty kitchen table, one apple rolled away from it, soft side light and a long shadow, lots of calm empty space above, a gentle touch of humour, nobody",
+  "alt": "Un sac de courses seul sur la table de la cuisine, une pomme qui a roulé",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ]
+ }
+]

@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ATOUS CŒUR · services à la personne à Hondainville (Oise)</title>
+<meta name="description" content="Ménage, jardin, courses, repas, rendez-vous et papiers : Jérôme Sannier vous aide chez vous, dans l&#39;Oise. Première inscription gratuite, avance immédiate de l&#39;Urssaf.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://atouscoeurjerome-maquette.vercel.app/">
+<style>:root{--fond:#FBF7F2;--texte:#1E1622;--voile-fond:#2D1838;--ouverture-fond:#2D1838;--menu-fond:#2D1838}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#FBF7F2">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ATOUS CŒUR">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="ATOUS CŒUR · services à la personne à Hondainville (Oise)">
+<meta property="og:description" content="Ménage, jardin, courses, repas, rendez-vous et papiers : Jérôme Sannier vous aide chez vous, dans l&#39;Oise. Première inscription gratuite, avance immédiate de l&#39;Urssaf.">
+<meta property="og:url" content="https://atouscoeurjerome-maquette.vercel.app/">
+<meta property="og:image" content="https://atouscoeurjerome-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ATOUS CŒUR : vous assister au quotidien, jardin tondu au-dessus d&#39;un village de l&#39;Oise">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ATOUS CŒUR","description":"Services à la personne à domicile : ménage, jardin, courses, aide aux repas, accompagnement aux rendez-vous, aide administrative.","url":"https://atouscoeurjerome-maquette.vercel.app/","telephone":"+33687546888","email":"jeromesannier@yahoo.fr","founder":{"@type":"Person","name":"Jérôme Sannier"},"foundingDate":"2022","address":{"@type":"PostalAddress","addressLocality":"Hondainville","addressRegion":"Oise","addressCountry":"FR"},"identifier":"SIRET 92482480800019","makesOffer":[{"@type":"Offer","name":"Ménage intérieur","price":"30","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Entretien extérieur","price":"35","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Rendez-vous médicaux ou autres","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Portage de courses","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Aide administrative","price":"25","priceCurrency":"EUR","unitText":"heure"}]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="glisse" aria-hidden="true"><span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <span class="ouverture-bande"><i></i></span>
+  <div class="ouverture-marque" data-ouverture-objet>
+    <p class="ouverture-nom"><span class="ouverture-mot">ATOUS</span> <span class="ouverture-mot ouverture-mot--rouge">CŒUR</span></p>
+    <p class="ouverture-ligne">Services à la personne</p>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="ATOUS CŒUR, accueil" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo.svg" alt="" width="169" height="30">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/jerome" data-libelle="Jérôme">Jérôme</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton entete-tel" href="tel:+33687546888"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>06 87 54 68 88</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/services" class="menu-lien" data-libelle="Services">Services</a></li><li style="--i:2"><a href="/jerome" class="menu-lien" data-libelle="Jérôme">Jérôme</a></li><li style="--i:3"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33687546888">Appeler 06 87 54 68 88</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero" id="debut" data-plein-ecran>
+  <figure class="media hero-media" data-effet="hero-photo" style="--apercu:url(data:image/jpeg;base64,/9j/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAASABgDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIEBgH/xAAjEAACAgEDAwUAAAAAAAAAAAABAgADBBESUSIxQQUTIWFx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEDBP/EAB0RAAICAQUAAAAAAAAAAAAAAAACAUEDBBEUMTL/2gAMAwEAAhEDEQA/AJUX4ltYcWaa+DLdeXhIh3Oo0mYrewBQFU8jidpd7Gf3awFHb7jbVvZGMSx0aRvUcStem86eAsTN2KzL0gaccRDlb2OEWCvlHbkJt+PyWlPTETI/mCtEW7xESYj/2Q==);--apercu-mobile:url(data:image/jpeg;base64,/9j/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAArABgDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQIG/8QAIxAAAgICAAYDAQAAAAAAAAAAAQIAAwQREyExQVFxBRIiYf/EABgBAAMBAQAAAAAAAAAAAAAAAAIDBAUA/8QAGxEBAQEAAgMAAAAAAAAAAAAAAQARAgMSE0H/2gAMAwEAAhEDEQA/AGCt2HqVU00Ko4rNvwI4tUV3UQG9wXIRXVbgo357zRe0aE60mLiKNPTaQe0J291a1gKwX+QivYzPEvJ8G1gSCy+ouyl7XU2WWD6xGBmZFptJcfnkNyO/5PIW0qXB9TK3sXNqG0LWezaUvYzeTCUYtu8VWbmT4hBOaXZJ4VTVEJoCTjAqDbIEhqdkuKqxA30mhW7GxtnehD5ccNI0+1I0iaXoIRZPKEnh2//Z);--cadrage:42% 52%;--cadrage-mobile:50% 52%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-ouverture-mobile-640.webp 640w, /assets/images/accueil-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/accueil-ouverture-1280.webp" srcset="/assets/images/accueil-ouverture-640.webp 640w, /assets/images/accueil-ouverture-1280.webp 1280w, /assets/images/accueil-ouverture-1920.webp 1920w" sizes="100vw" alt="Un jardin fraîchement tondu par Jérôme, au-dessus des toits d&#39;un village de l&#39;Oise, sous un grand ciel bleu" width="1280" height="960" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  <span class="hero-bande" data-iris-centre data-superpose aria-hidden="true"><i data-effet="bande"><b class="bande-reflet"></b></i></span>
+  <div class="hero-texte conteneur">
+    <p class="surtitre hero-anim">Services à la personne · Hondainville, Oise</p>
+    <h1 class="hero-titre"><span class="ligne-masque"><span class="hero-ligne">Vous assister</span></span> <span class="ligne-masque"><span class="hero-ligne"><em>au quotidien.</em></span></span></h1>
+    <p class="hero-intro hero-anim masque-ecran-bas">Ménage, jardin, courses, repas, rendez-vous et papiers : Jérôme Sannier vient chez vous, pour que vous restiez bien chez vous.</p>
+    <p class="hero-actions hero-anim">
+      <a class="bouton" href="tel:+33687546888" data-action-principale data-survol="magnetique">Appeler Jérôme<span class="masque-telephone"> · 06 87 54 68 88</span></a>
+      <a href="/reserver" class="bouton bouton--clair" data-libelle="Réserver">Réserver un créneau</a>
+    </p>
+  </div>
+  <aside class="hero-info hero-anim" data-info-cle>
+    <strong>Première inscription gratuite</strong>
+    <span class="hero-info-prix" data-prix>30 € → 15 €</span>
+    <span>l&#39;heure de ménage avec l&#39;avance immédiate</span>
+  </aside>
+</section>
+<section class="services" id="services">
+  <div class="conteneur">
+    <header class="section-tete">
+      <p class="surtitre" data-anime>Six services à domicile</p>
+      <h2 data-anime="lignes">Ce que Jérôme fait <em>pour vous.</em></h2>
+      <p class="section-intro" data-anime>Tous les services se personnalisent sur demande. Les prix sont à l&#39;heure ; avec l&#39;avance immédiate, vous n&#39;en payez que la moitié.</p>
+    </header>
+    <ul class="services-grille" role="list"><li class="service-carte" data-fx="vitesse" data-fx-force="2" style="--i:0">
+    <figure class="media service-media" data-grok data-anime="rideau" style="--cadrage:53% 51%;aspect-ratio:16 / 10">
+  <picture>
+    <img src="/assets/images/grok/menage-1168.webp" srcset="/assets/images/grok/menage-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" alt="Cuisine de village fraîchement nettoyée, seau et balai posés près de la porte" width="1168" height="730" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="service-corps">
+      <span class="service-picto" data-effet="picto"><svg class="picto" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M10 22h20l-2.5 18h-15z" pathLength="1"/><path d="M13 22c0-7 14-7 14 0" pathLength="1"/><path d="M37 5v25" pathLength="1"/><path d="M31.5 30h11l2 11h-15z" pathLength="1"/><path d="M35 34v6M39 34v6" pathLength="1"/></svg></span>
+      <h3>Ménage intérieur</h3>
+      <p>Entretien de l&#39;intérieur du domicile et entretien ménager.</p>
+      <p class="prix" data-prix><strong>30 €</strong> <span class="prix-unite">/ h</span><span class="prix-avance">15 € avec l&#39;avance immédiate</span></p>
+      <a href="/reserver?service=menage" class="service-lien" data-libelle="Réserver" aria-label="Réserver ce service : Ménage intérieur">Réserver ce service <span aria-hidden="true">→</span></a>
+    </div>
+  </li><li class="service-carte" data-fx="vitesse" data-fx-force="2" style="--i:1">
+    <figure class="media service-media" data-grok data-anime="rideau" style="--cadrage:47% 43%;aspect-ratio:16 / 10">
+  <picture>
+    <img src="/assets/images/grok/jardin-1168.webp" srcset="/assets/images/grok/jardin-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" alt="Pelouse tondue, haie taillée et brouette d&#39;herbe coupée dans un jardin de village" width="1168" height="730" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="service-corps">
+      <span class="service-picto" data-effet="picto"><svg class="picto" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 42V22" pathLength="1"/><path d="M24 31c-9 0-13-7-13-15 9 0 13 7 13 15z" pathLength="1"/><path d="M24 25c0-8 4-13 13-13 0 9-4 13-13 13z" pathLength="1"/><path d="M9 42h30" pathLength="1"/></svg></span>
+      <h3>Jardin et extérieurs</h3>
+      <p>Jardinage et travaux d&#39;extérieur, pour garder un extérieur net.</p>
+      <p class="prix" data-prix><strong>35 €</strong> <span class="prix-unite">/ h</span><span class="prix-avance">17,50 € avec l&#39;avance immédiate</span></p>
+      <a href="/reserver?service=jardin" class="service-lien" data-libelle="Réserver" aria-label="Réserver ce service : Jardin et extérieurs">Réserver ce service <span aria-hidden="true">→</span></a>
+    </div>
+  </li><li class="service-carte" data-fx="vitesse" data-fx-force="2" style="--i:2">
+    <figure class="media service-media" data-grok data-anime="rideau" style="--cadrage:43% 46%;aspect-ratio:16 / 10">
+  <picture>
+    <img src="/assets/images/grok/courses-1168.webp" srcset="/assets/images/grok/courses-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" alt="Deux sacs de courses posés sur la table de la cuisine, pain, poireaux et pommes" width="1168" height="730" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="service-corps">
+      <span class="service-picto" data-effet="picto"><svg class="picto" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M7 18h34l-4.5 21h-25z" pathLength="1"/><path d="M16 18l6-11" pathLength="1"/><path d="M32 18l-6-11" pathLength="1"/><path d="M18 25v8M24 25v8M30 25v8" pathLength="1"/></svg></span>
+      <h3>Courses</h3>
+      <p>Livraison rapide de courses et portage jusque chez vous.</p>
+      <p class="prix" data-prix><strong>25 €</strong> <span class="prix-unite">/ h</span><span class="prix-avance">12,50 € avec l&#39;avance immédiate</span></p>
+      <a href="/reserver?service=courses" class="service-lien" data-libelle="Réserver" aria-label="Réserver ce service : Courses">Réserver ce service <span aria-hidden="true">→</span></a>
+    </div>
+  </li><li class="service-carte" data-fx="vitesse" data-fx-force="2" style="--i:3">
+    <figure class="media service-media" data-grok data-anime="rideau" style="--cadrage:44% 50%;aspect-ratio:16 / 10">
+  <picture>
+    <img src="/assets/images/grok/repas-1168.webp" srcset="/assets/images/grok/repas-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" alt="Une soupe de légumes qui mijote dans une cocotte émaillée" width="1168" height="730" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="service-corps">
+      <span class="service-picto" data-effet="picto"><svg class="picto" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M9 24h30v9a9 9 0 0 1-9 9H18a9 9 0 0 1-9-9z" pathLength="1"/><path d="M5 24h38" pathLength="1"/><path d="M18 17c-2.5-3 2.5-5 0-9" pathLength="1"/><path d="M24 17c-2.5-3 2.5-5 0-9" pathLength="1"/><path d="M30 17c-2.5-3 2.5-5 0-9" pathLength="1"/></svg></span>
+      <h3>Repas</h3>
+      <p>Aide aux repas et préparation des repas à domicile.</p>
+      <p class="prix prix--demande" data-prix>Tarif sur demande</p>
+      <a href="/reserver?service=repas" class="service-lien" data-libelle="Réserver" aria-label="Réserver ce service : Repas">Réserver ce service <span aria-hidden="true">→</span></a>
+    </div>
+  </li><li class="service-carte" data-fx="vitesse" data-fx-force="2" style="--i:4">
+    <figure class="media service-media" data-anime="rideau" style="--cadrage:50% 55%;aspect-ratio:16 / 10">
+  <picture>
+    <img src="/assets/images/rendez-vous-1168.webp" srcset="/assets/images/rendez-vous-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" alt="La voiture d&#39;ATOUS CŒUR devant un pôle santé, pour un accompagnement à un rendez-vous" width="1168" height="730" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="service-corps">
+      <span class="service-picto" data-effet="picto"><svg class="picto" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M8 11h32v30H8z" pathLength="1"/><path d="M8 19h32" pathLength="1"/><path d="M16 6v9M32 6v9" pathLength="1"/><path d="M24 24v12" pathLength="1"/><path d="M18 30h12" pathLength="1"/></svg></span>
+      <h3>Rendez-vous</h3>
+      <p>Accompagnement à vos rendez-vous médicaux ou autres.</p>
+      <p class="prix" data-prix><strong>25 €</strong> <span class="prix-unite">/ h</span><span class="prix-avance">12,50 € avec l&#39;avance immédiate</span></p>
+      <a href="/reserver?service=rendez-vous" class="service-lien" data-libelle="Réserver" aria-label="Réserver ce service : Rendez-vous">Réserver ce service <span aria-hidden="true">→</span></a>
+    </div>
+  </li><li class="service-carte" data-fx="vitesse" data-fx-force="2" style="--i:5">
+    <figure class="media service-media" data-grok data-anime="rideau" style="--cadrage:48% 50%;aspect-ratio:16 / 10">
+  <picture>
+    <img src="/assets/images/grok/papiers-1168.webp" srcset="/assets/images/grok/papiers-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" alt="Dossier fermé, enveloppes et lunettes rangés sur la table, près d&#39;une tasse de thé" width="1168" height="730" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="service-corps">
+      <span class="service-picto" data-effet="picto"><svg class="picto" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M12 5h18l8 8v30H12z" pathLength="1"/><path d="M30 5v8h8" pathLength="1"/><path d="M18 21h14" pathLength="1"/><path d="M18 27h14" pathLength="1"/><path d="M18 33h9" pathLength="1"/></svg></span>
+      <h3>Papiers</h3>
+      <p>Aide administrative et accompagnement dans vos démarches.</p>
+      <p class="prix" data-prix><strong>25 €</strong> <span class="prix-unite">/ h</span><span class="prix-avance">12,50 € avec l&#39;avance immédiate</span></p>
+      <a href="/reserver?service=papiers" class="service-lien" data-libelle="Réserver" aria-label="Réserver ce service : Papiers">Réserver ce service <span aria-hidden="true">→</span></a>
+    </div>
+  </li></ul>
+    <div class="services-pied" data-anime>
+      <p>Aide à la toilette et aide à la vie quotidienne : sur demande, à voir ensemble à l&#39;inscription.</p>
+      <a href="/services" class="bouton bouton--contour" data-libelle="Services">Détail des services et tarifs</a>
+    </div>
+  </div>
+</section>
+<section class="avance theme-sombre" id="avance">
+  <div class="conteneur avance-grille">
+    <div class="avance-visuel" data-visuel data-effet="prix-coupe">
+      <p class="visuellement-cache">Ménage : 30 € de l&#39;heure, 15 € avec l&#39;avance immédiate.</p>
+      <div class="coupe" aria-hidden="true">
+        <div class="coupe-avant"><span class="coupe-libelle">Prix de l&#39;heure</span><span class="coupe-cadre"><span class="coupe-prix">30 €</span><span class="coupe-bande" data-superpose><i></i></span></span></div>
+        <div class="coupe-apres"><span class="coupe-libelle">Vous payez</span><span class="coupe-nouveau">15 €</span></div>
+      </div>
+    </div>
+    <div class="avance-texte">
+      <p class="surtitre" data-anime>Avance immédiate de l&#39;Urssaf</p>
+      <h2 data-anime="lignes">Vous ne payez <em>que la moitié.</em></h2>
+      <p data-anime>Les services à la personne ouvrent droit à un crédit d&#39;impôt de 50 %. Avec l&#39;avance immédiate de l&#39;Urssaf, il est déduit tout de suite : plus besoin d&#39;attendre l&#39;année suivante.</p>
+      <form class="simulateur" data-simulateur data-anime onsubmit="return false">
+        <p class="simulateur-titre">Faites le calcul</p>
+        <div class="simulateur-champs">
+          <label class="champ"><span>Service</span>
+            <select name="service"><option value="30" selected>Ménage intérieur · 30 €/h</option><option value="35">Jardin et extérieurs · 35 €/h</option><option value="25">Courses · 25 €/h</option><option value="25">Rendez-vous · 25 €/h</option><option value="25">Papiers · 25 €/h</option></select></label>
+          <div class="champ"><span id="sim-heures-l">Heures par semaine</span>
+            <div class="pas-a-pas" role="group" aria-labelledby="sim-heures-l">
+              <button type="button" data-moins aria-label="Une heure de moins">−</button>
+              <output name="heures" aria-live="polite">2</output>
+              <button type="button" data-plus aria-label="Une heure de plus">+</button>
+            </div></div>
+        </div>
+        <dl class="simulateur-resultat" aria-live="polite">
+          <div><dt>Prix sur 4 semaines</dt><dd data-total>240 €</dd></div>
+          <div class="simulateur-vous"><dt>Vous payez</dt><dd data-vous>120 €</dd></div>
+        </dl>
+      </form>
+      <p class="note" data-anime>Sous conditions : service gratuit et facultatif de l&#39;Urssaf, dans la limite des plafonds annuels du crédit d&#39;impôt. Demandez-le à Jérôme lors de la première inscription.</p>
+      <p data-anime><a href="/services#avance" class="lien-fleche" data-libelle="Services">Comment ça marche <span aria-hidden="true">→</span></a></p>
+    </div>
+  </div>
+</section>
+<section class="jerome-bloc" id="jerome">
+  <div class="conteneur jerome-grille">
+    <figure class="media jerome-media" data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 48%;aspect-ratio:16 / 10">
+  <picture>
+    <img src="/assets/images/voiture-1600.webp" srcset="/assets/images/voiture-1024.webp 1024w, /assets/images/voiture-1168.webp 1168w, /assets/images/voiture-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 55vw" alt="La voiture blanche d&#39;ATOUS CŒUR, barrée d&#39;une bande rouge et violette, avec les services et le numéro de Jérôme sur la portière" width="1600" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="jerome-texte">
+      <p class="surtitre" data-anime>Qui vient chez vous</p>
+      <h2 data-anime="lignes">Vous reconnaîtrez <em>sa voiture.</em></h2>
+      <p data-anime>ATOUS CŒUR, l&#39;entreprise de Jérôme Sannier, est née en 2022 à Hondainville. L&#39;idée : des services à domicile personnalisés, avec réactivité, professionnalisme et des tarifs abordables.</p>
+      <ul class="trois-mots" data-anime="cascade" role="list"><li>Passionnés.</li><li>Expérimentés.</li><li>Attentionnés.</li></ul>
+      <p data-anime><a href="/jerome" class="bouton bouton--contour" data-libelle="Jérôme">Faire connaissance</a></p>
+    </div>
+  </div>
+</section>
+<section class="etapes theme-lin" id="etapes">
+  <div class="conteneur">
+    <header class="section-tete section-tete--centre">
+      <p class="surtitre" data-anime>Pour commencer</p>
+      <h2 data-anime="lignes">Trois étapes, <em>pas une de plus.</em></h2>
+    </header>
+    <div class="route" data-effet="route" data-visuel>
+      <svg class="route-trace" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
+        <path class="route-fond" d="M0 150 C 180 150, 220 60, 400 70 S 640 180, 800 160 S 1040 50, 1200 80"/>
+        <path class="route-ligne" d="M0 150 C 180 150, 220 60, 400 70 S 640 180, 800 160 S 1040 50, 1200 80"/>
+        <path class="route-faite" d="M0 150 C 180 150, 220 60, 400 70 S 640 180, 800 160 S 1040 50, 1200 80" pathLength="1"/>
+      </svg>
+      <span class="route-voiture" aria-hidden="true"><svg viewBox="0 0 64 32"><defs><linearGradient id="voiture-bande" x1="0" x2="1"><stop offset="0" stop-color="#5B2A86"/><stop offset="1" stop-color="#D7262E"/></linearGradient></defs><path d="M6 22c0-4 2-7 6-8l8-7h18l10 7h6c3 0 5 2 5 5v3z" fill="#fff" stroke="#2D1838" stroke-width="2" stroke-linejoin="round"/><path d="M9 21l40-10 3 3-40 10z" fill="url(#voiture-bande)"/><circle cx="17" cy="24" r="5" fill="#2D1838"/><circle cx="48" cy="24" r="5" fill="#2D1838"/></svg></span>
+      <span class="route-verticale" aria-hidden="true"></span>
+      <ol class="route-etapes" role="list">
+        <li class="route-etape"><span class="route-num">1</span><h3>Vous appelez Jérôme</h3><p>Au 06 87 54 68 88, ou en réservant un créneau en ligne.</p></li>
+        <li class="route-etape"><span class="route-num">2</span><h3>La première inscription</h3><p>Un premier rendez-vous d&#39;une heure, gratuit.</p></li>
+        <li class="route-etape"><span class="route-num">3</span><h3>Jérôme vient chez vous</h3><p>Pour le ménage, le jardin, les courses, les repas ou les papiers : ce que vous avez choisi ensemble.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="zone" id="zone">
+  <div class="conteneur zone-grille">
+    <div class="zone-texte">
+      <p class="surtitre" data-anime>Où intervient Jérôme</p>
+      <h2 data-anime="lignes">Depuis <em>Hondainville.</em></h2>
+      <p data-anime>ATOUS CŒUR est installée à Hondainville, dans l&#39;Oise. Vous habitez un peu plus loin ? Appelez Jérôme : vous verrez ensemble.</p>
+      <p data-anime><a class="bouton" href="tel:+33687546888" data-survol="magnetique">Appeler Jérôme</a></p>
+    </div>
+    <figure class="carte-oise" data-visuel data-effet="carte-oise">
+  <svg viewBox="0 0 640 430" role="img" aria-label="Carte schématique : Hondainville au centre, avec Mouy, Clermont, Noailles, Liancourt, Creil et Beauvais en repères.">
+    <defs><linearGradient id="carte-bande" x1="0" x2="1"><stop offset="0" stop-color="#5B2A86"/><stop offset="1" stop-color="#D7262E"/></linearGradient></defs>
+    <path class="carte-riviere" d="M70 70 C 150 120, 230 160, 300 200 S 400 268, 470 300 S 560 350, 610 372" pathLength="1"/>
+    <path class="carte-route" data-superpose d="M341 227 Q 356 246 361 270" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 280 252 215 246" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 400 172 477 150" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 444 210 544 242" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 465 276 554 376" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 183 173 66 53" pathLength="1"/>
+    <g class="carte-ondes" data-superpose transform="translate(341 227)"><circle r="40"/><circle r="40"/><circle r="40"/></g>
+    <g class="carte-ville" data-repere transform="translate(361 270)"><g><circle r="6"/><text x="0" y="30" text-anchor="middle">Mouy</text></g></g><g class="carte-ville" data-repere transform="translate(215 246)"><g><circle r="6"/><text x="-12" y="6" text-anchor="end">Noailles</text></g></g><g class="carte-ville" data-repere transform="translate(477 150)"><g><circle r="6"/><text x="12" y="6" text-anchor="start">Clermont</text></g></g><g class="carte-ville" data-repere transform="translate(544 242)"><g><circle r="6"/><text x="-12" y="6" text-anchor="end">Liancourt</text></g></g><g class="carte-ville" data-repere transform="translate(554 376)"><g><circle r="6"/><text x="-12" y="6" text-anchor="end">Creil</text></g></g><g class="carte-ville" data-repere transform="translate(66 53)"><g><circle r="6"/><text x="12" y="6" text-anchor="start">Beauvais</text></g></g>
+    <g class="carte-centre" data-repere transform="translate(341 227)"><g><circle r="13"/><path d="M0 5s-6.5-4-6.5-8.6a3.4 3.4 0 0 1 6.5-1.7 3.4 3.4 0 0 1 6.5 1.7C6.5 1 0 5 0 5z" fill="#fff"/><text x="0" y="-24" text-anchor="middle">Hondainville</text></g></g>
+  </svg>
+  <figcaption>Repères autour de Hondainville. La zone d&#39;intervention se précise par téléphone.</figcaption>
+</figure>
+  </div>
+</section>
+<section class="engagements" id="engagements">
+  <div class="conteneur engagements-grille">
+    <div class="engagements-texte">
+      <p class="surtitre" data-anime>Nos engagements</p>
+      <h2 data-anime="lignes">Ce qui compte <em>chez vous.</em></h2>
+      <ul class="engagements-liste" role="list">
+        <li data-anime style="--delai:0s"><span class="coche" aria-hidden="true"><svg class="coche-coeur" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 41s-15-9-15-20a8 8 0 0 1 15-4 8 8 0 0 1 15 4c0 11-15 20-15 20z" pathLength="1"/></svg></span><div><h3>Votre vie privée</h3><p>Elle est respectée, à chaque passage.</p></div></li><li data-anime style="--delai:0.08s"><span class="coche" aria-hidden="true"><svg class="coche-coeur" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 41s-15-9-15-20a8 8 0 0 1 15-4 8 8 0 0 1 15 4c0 11-15 20-15 20z" pathLength="1"/></svg></span><div><h3>Vos habitudes</h3><p>Vos préférences passent en premier.</p></div></li><li data-anime style="--delai:0.16s"><span class="coche" aria-hidden="true"><svg class="coche-coeur" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 41s-15-9-15-20a8 8 0 0 1 15-4 8 8 0 0 1 15 4c0 11-15 20-15 20z" pathLength="1"/></svg></span><div><h3>La réactivité</h3><p>Un coup de main quand vous en avez besoin.</p></div></li><li data-anime style="--delai:0.24s"><span class="coche" aria-hidden="true"><svg class="coche-coeur" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 41s-15-9-15-20a8 8 0 0 1 15-4 8 8 0 0 1 15 4c0 11-15 20-15 20z" pathLength="1"/></svg></span><div><h3>Des tarifs abordables</h3><p>Des prix à l&#39;heure, clairs, et la moitié seulement avec l&#39;avance immédiate.</p></div></li>
+      </ul>
+      <p class="engagements-sap" data-anime>Déclaré services à la personne · SAP 924824808</p>
+    </div>
+    <figure class="media engagements-media" data-grok data-fx="zoom" data-fx-force="14" style="--cadrage:71% 50%;aspect-ratio:4 / 5;--cadrage-mobile:50% 52%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/calme-mobile-640.webp 640w" sizes="(max-width: 760px) 100vw, 45vw">
+    <img src="/assets/images/grok/calme-1280.webp" srcset="/assets/images/grok/calme-640.webp 640w, /assets/images/grok/calme-1280.webp 1280w, /assets/images/grok/calme-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 45vw" alt="Fauteuil près de la fenêtre, tasse de thé sur le rebord, dans un salon paisible" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+  <p class="conteneur grande-phrase" data-anime="mots">Il n&#39;y a pas de meilleur endroit que son chez-soi.</p>
+</section>
+<section class="appel" id="appel">
+  <span class="appel-bande" data-visuel aria-hidden="true"><i data-effet="bande"></i></span>
+  <div class="conteneur appel-grille">
+    <p class="surtitre" data-anime>Un coup de main ?</p>
+    <h2 data-anime="lignes">Un coup de fil <em>suffit.</em></h2>
+    <p class="appel-tel" data-anime><a href="tel:+33687546888" data-survol="magnetique">06 87 54 68 88</a></p>
+    <p data-anime>Jérôme répond à vos questions et fixe avec vous la première inscription, gratuite.</p>
+    <p class="appel-actions" data-anime><a href="/reserver" class="bouton" data-libelle="Réserver" data-survol="magnetique">Réserver en ligne</a> <a href="/contact#ecrire" class="bouton bouton--contour" data-libelle="Contact">Lui écrire</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="pied-bande" aria-hidden="true"></div>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.svg" alt="ATOUS CŒUR" width="225" height="40" loading="lazy">
+      <p>Services à la personne · Hondainville (Oise)</p>
+    </div>
+    <div>
+      <p class="pied-titre">Téléphone</p>
+      <p><a class="pied-tel" href="tel:+33687546888">06 87 54 68 88</a></p>
+      <p class="pied-titre">E-mail</p>
+      <p class="pied-email">jeromesannier@yahoo.fr</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/jerome" data-libelle="Jérôme">Jérôme</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Pratique</p>
+      <ul>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+      <p class="pied-legal">Déclaré services à la personne · SAP 924824808<br>SIRET 924 824 808 00019</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : formulaires et réservations simulés, rien n&#39;est envoyé.</p><p>Mentions légales · à compléter &nbsp;|&nbsp; Politique de confidentialité · à compléter</p><p>© ATOUS CŒUR · Jérôme Sannier</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--sombre" href="tel:+33687546888"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+</body>
+</html>

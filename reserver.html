@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réserver un créneau · ATOUS CŒUR</title>
+<meta name="description" content="Choisissez un service, une durée et un jour : réservation en quelques étapes, avec le prix et le reste à charge.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://atouscoeurjerome-maquette.vercel.app/reserver">
+<style>:root{--fond:#FBF7F2;--texte:#1E1622;--voile-fond:#2D1838;--ouverture-fond:#2D1838;--menu-fond:#2D1838}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="stylesheet" href="/assets/css/formulaire-par-etapes.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#FBF7F2">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ATOUS CŒUR">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Réserver un créneau · ATOUS CŒUR">
+<meta property="og:description" content="Choisissez un service, une durée et un jour : réservation en quelques étapes, avec le prix et le reste à charge.">
+<meta property="og:url" content="https://atouscoeurjerome-maquette.vercel.app/reserver">
+<meta property="og:image" content="https://atouscoeurjerome-maquette.vercel.app/assets/partage/reserver-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Réserver un créneau avec ATOUS CŒUR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ATOUS CŒUR","description":"Services à la personne à domicile : ménage, jardin, courses, aide aux repas, accompagnement aux rendez-vous, aide administrative.","url":"https://atouscoeurjerome-maquette.vercel.app/","telephone":"+33687546888","email":"jeromesannier@yahoo.fr","founder":{"@type":"Person","name":"Jérôme Sannier"},"foundingDate":"2022","address":{"@type":"PostalAddress","addressLocality":"Hondainville","addressRegion":"Oise","addressCountry":"FR"},"identifier":"SIRET 92482480800019","makesOffer":[{"@type":"Offer","name":"Ménage intérieur","price":"30","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Entretien extérieur","price":"35","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Rendez-vous médicaux ou autres","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Portage de courses","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Aide administrative","price":"25","priceCurrency":"EUR","unitText":"heure"}]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="glisse" aria-hidden="true"><span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>Réserver</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <span class="ouverture-bande"><i></i></span>
+  <div class="ouverture-marque" data-ouverture-objet>
+    <p class="ouverture-nom"><span class="ouverture-mot">ATOUS</span> <span class="ouverture-mot ouverture-mot--rouge">CŒUR</span></p>
+    <p class="ouverture-ligne">Services à la personne</p>
+  </div>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="ATOUS CŒUR, accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="169" height="30">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/jerome" data-libelle="Jérôme">Jérôme</a></li><li><a href="/reserver" data-libelle="Réserver" aria-current="page">Réserver</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton entete-tel" href="tel:+33687546888"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>06 87 54 68 88</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/services" class="menu-lien" data-libelle="Services">Services</a></li><li style="--i:2"><a href="/jerome" class="menu-lien" data-libelle="Jérôme">Jérôme</a></li><li style="--i:3"><a href="/reserver" class="menu-lien" data-libelle="Réserver" aria-current="page">Réserver</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33687546888">Appeler 06 87 54 68 88</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="reservation" id="debut">
+  <div class="conteneur reservation-grille">
+    <div class="reservation-tete">
+      <span class="reservation-bande" data-visuel aria-hidden="true"><i></i></span>
+      <p class="surtitre hero-anim">Réservation</p>
+      <h1 class="tete-titre" data-iris-centre><span class="ligne-masque"><span class="hero-ligne">Réservez</span></span> <span class="ligne-masque"><span class="hero-ligne"><em>un créneau.</em></span></span></h1>
+      <p class="tete-intro hero-anim masque-ecran-bas">Choisissez un service, une durée et un jour. Démonstration : rien n&#39;est envoyé.</p>
+      <p class="tete-actions hero-anim"><a class="bouton bouton--sombre" href="tel:+33687546888" data-action-principale>Appeler Jérôme</a> <span class="pastille" data-info-cle>Première inscription gratuite</span></p>
+      <aside class="recap hero-anim" data-recap-reservation aria-live="polite">
+        <p class="recap-titre">Votre réservation</p>
+        <dl>
+          <div><dt>Service</dt><dd data-r="service">À choisir</dd></div>
+          <div><dt>Durée</dt><dd data-r="duree">1 h</dd></div>
+          <div><dt>Jour</dt><dd data-r="jour">À choisir</dd></div>
+          <div class="recap-prix"><dt>Prix</dt><dd data-r="prix" data-prix>—</dd></div>
+          <div class="recap-vous"><dt>Avec l&#39;avance immédiate</dt><dd data-r="vous" data-prix>—</dd></div>
+        </dl>
+      </aside>
+    </div>
+    <div class="fpe" data-module="formulaire-par-etapes">
+      <div class="fpe__carton" data-fx="vitesse" data-fx-force="1">
+        <form class="fpe__form" action="#" method="post" novalidate data-reservation>
+          <div class="fpe__progression">
+            <ol class="fpe__reperes" aria-label="Progression"></ol>
+            <div class="fpe__barre" aria-hidden="true"><span></span></div>
+            <p class="fpe__etat" aria-live="polite"></p>
+          </div>
+          <fieldset class="fpe__etape" data-etape="Service">
+            <legend class="fpe__legende"><h2 class="fpe__titre">De quoi avez-vous besoin ?</h2></legend>
+            <div class="fpe__groupe fpe__cartes" data-libelle="Service">
+              <label class="fpe__carte"><input type="radio" name="service" value="menage" data-prix="30" data-nom="Ménage intérieur" required>
+                <span class="fpe__icone"><svg class="picto picto--petit" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M10 22h20l-2.5 18h-15z" pathLength="1"/><path d="M13 22c0-7 14-7 14 0" pathLength="1"/><path d="M37 5v25" pathLength="1"/><path d="M31.5 30h11l2 11h-15z" pathLength="1"/><path d="M35 34v6M39 34v6" pathLength="1"/></svg></span>
+                <span class="fpe__carte-titre">Ménage intérieur</span><span class="fpe__carte-texte">30 € / h</span></label><label class="fpe__carte"><input type="radio" name="service" value="jardin" data-prix="35" data-nom="Jardin et extérieurs">
+                <span class="fpe__icone"><svg class="picto picto--petit" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 42V22" pathLength="1"/><path d="M24 31c-9 0-13-7-13-15 9 0 13 7 13 15z" pathLength="1"/><path d="M24 25c0-8 4-13 13-13 0 9-4 13-13 13z" pathLength="1"/><path d="M9 42h30" pathLength="1"/></svg></span>
+                <span class="fpe__carte-titre">Jardin et extérieurs</span><span class="fpe__carte-texte">35 € / h</span></label><label class="fpe__carte"><input type="radio" name="service" value="courses" data-prix="25" data-nom="Courses">
+                <span class="fpe__icone"><svg class="picto picto--petit" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M7 18h34l-4.5 21h-25z" pathLength="1"/><path d="M16 18l6-11" pathLength="1"/><path d="M32 18l-6-11" pathLength="1"/><path d="M18 25v8M24 25v8M30 25v8" pathLength="1"/></svg></span>
+                <span class="fpe__carte-titre">Courses</span><span class="fpe__carte-texte">25 € / h</span></label><label class="fpe__carte"><input type="radio" name="service" value="repas" data-prix="" data-nom="Repas">
+                <span class="fpe__icone"><svg class="picto picto--petit" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M9 24h30v9a9 9 0 0 1-9 9H18a9 9 0 0 1-9-9z" pathLength="1"/><path d="M5 24h38" pathLength="1"/><path d="M18 17c-2.5-3 2.5-5 0-9" pathLength="1"/><path d="M24 17c-2.5-3 2.5-5 0-9" pathLength="1"/><path d="M30 17c-2.5-3 2.5-5 0-9" pathLength="1"/></svg></span>
+                <span class="fpe__carte-titre">Repas</span><span class="fpe__carte-texte">Tarif sur demande</span></label><label class="fpe__carte"><input type="radio" name="service" value="rendez-vous" data-prix="25" data-nom="Rendez-vous">
+                <span class="fpe__icone"><svg class="picto picto--petit" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M8 11h32v30H8z" pathLength="1"/><path d="M8 19h32" pathLength="1"/><path d="M16 6v9M32 6v9" pathLength="1"/><path d="M24 24v12" pathLength="1"/><path d="M18 30h12" pathLength="1"/></svg></span>
+                <span class="fpe__carte-titre">Rendez-vous</span><span class="fpe__carte-texte">25 € / h</span></label><label class="fpe__carte"><input type="radio" name="service" value="papiers" data-prix="25" data-nom="Papiers">
+                <span class="fpe__icone"><svg class="picto picto--petit" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M12 5h18l8 8v30H12z" pathLength="1"/><path d="M30 5v8h8" pathLength="1"/><path d="M18 21h14" pathLength="1"/><path d="M18 27h14" pathLength="1"/><path d="M18 33h9" pathLength="1"/></svg></span>
+                <span class="fpe__carte-titre">Papiers</span><span class="fpe__carte-texte">25 € / h</span></label>
+              <label class="fpe__carte"><input type="radio" name="service" value="inscription" data-prix="0" data-nom="Première inscription">
+                <span class="fpe__icone"><svg class="picto picto--petit" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 41s-15-9-15-20a8 8 0 0 1 15-4 8 8 0 0 1 15 4c0 11-15 20-15 20z" pathLength="1"/></svg></span>
+                <span class="fpe__carte-titre">Première inscription</span><span class="fpe__carte-texte">1 h, gratuite</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Quand">
+            <legend class="fpe__legende"><h2 class="fpe__titre">Combien de temps, et quand ?</h2></legend>
+            <fieldset class="fpe__groupe" data-libelle="Durée">
+              <legend class="fpe__groupe-titre">Durée</legend>
+              <div class="fpe__puces">
+                <label class="fpe__puce"><input type="radio" name="duree" value="1" checked required><span class="fpe__choix-texte">1 h</span></label><label class="fpe__puce"><input type="radio" name="duree" value="2"><span class="fpe__choix-texte">2 h</span></label><label class="fpe__puce"><input type="radio" name="duree" value="3"><span class="fpe__choix-texte">3 h</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="fpe__groupe" data-libelle="Jour souhaité">
+              <legend class="fpe__groupe-titre">Jour souhaité</legend>
+              <div class="fpe__puces jours" data-jours data-aujourdhui="aujourd&#39;hui">
+                <div class="fpe__champ"><input type="date" name="jour" aria-label="Jour souhaité" required></div>
+              </div>
+              <p class="fpe__aide">Les jours passés ne sont pas proposés.</p>
+            </fieldset>
+            <fieldset class="fpe__groupe" data-libelle="Moment souhaité">
+              <legend class="fpe__groupe-titre">Moment souhaité</legend>
+              <div class="fpe__puces">
+                <label class="fpe__puce"><input type="radio" name="moment" value="matin" required><span class="fpe__choix-texte">Le matin</span></label>
+                <label class="fpe__puce"><input type="radio" name="moment" value="apres-midi"><span class="fpe__choix-texte">L&#39;après-midi</span></label>
+                <label class="fpe__puce"><input type="radio" name="moment" value="egal"><span class="fpe__choix-texte">Peu importe</span></label>
+              </div>
+            </fieldset>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Vous">
+            <legend class="fpe__legende"><h2 class="fpe__titre">Vos coordonnées</h2></legend>
+            <div class="fpe__grille">
+              <div class="fpe__champ"><label for="r-nom">Nom et prénom</label><input id="r-nom" name="nom" autocomplete="name" required></div>
+              <div class="fpe__champ"><label for="r-tel">Téléphone</label><input id="r-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9 +().\-]{10,20}" required></div>
+              <div class="fpe__champ"><label for="r-email">E-mail (facultatif)</label><input id="r-email" name="email" type="email" autocomplete="email"></div>
+              <div class="fpe__champ"><label for="r-commune">Commune</label><input id="r-commune" name="commune" autocomplete="address-level2" required></div>
+            </div>
+            <div class="fpe__champ"><label for="r-message">Un mot pour Jérôme (facultatif)</label><textarea id="r-message" name="message" rows="3"></textarea></div>
+            <p class="fpe__aide">Vos coordonnées servent seulement à répondre à votre demande. Politique de confidentialité : à compléter.</p>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Récapitulatif" data-recap>
+            <legend class="fpe__legende"><h2 class="fpe__titre">Tout est juste ?</h2></legend>
+            <div class="fpe__recap"></div>
+          </fieldset>
+          <div class="fpe__nav">
+            <button class="fpe__bouton fpe__bouton--ligne" type="button" data-precedent>Retour</button>
+            <button class="fpe__bouton" type="button" data-suivant>Continuer</button>
+            <button class="fpe__bouton" type="submit">Envoyer la demande</button>
+          </div>
+        </form>
+        <div class="fpe__fin" hidden>
+          <svg class="fpe__coche" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-17"/></svg>
+          <h2>Demande prête</h2>
+          <p data-resume></p>
+          <p>Démonstration : rien n&#39;a été envoyé. Sur le vrai site, Jérôme recevra cette demande.</p>
+          <div class="fpe__fin-actions"><button class="fpe__bouton fpe__bouton--ligne" type="button" data-recommencer>Nouvelle demande</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="appel-tel theme-lin" id="appeler">
+  <div class="conteneur appel-tel-grille">
+    <figure class="media appel-tel-media" data-grok data-fx="parallaxe" style="--cadrage:56% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/porte-1600.webp" srcset="/assets/images/grok/porte-1024.webp 1024w, /assets/images/grok/porte-1168.webp 1168w, /assets/images/grok/porte-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 40vw" alt="Portillon entrouvert sur l&#39;allée d&#39;une maison de village" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div>
+      <p class="surtitre" data-anime>Vous préférez appeler ?</p>
+      <h2 data-anime="lignes">Jérôme <em>décroche.</em></h2>
+      <p data-anime>Un coup de fil, c&#39;est souvent plus simple : vous lui dites ce dont vous avez besoin, il vous propose un créneau.</p>
+      <p class="grand-tel" data-anime><a href="tel:+33687546888" data-survol="magnetique">06 87 54 68 88</a></p>
+    </div>
+  </div>
+</section>
+<section class="savoir" id="savoir">
+  <div class="conteneur">
+    <h2 data-anime="lignes">Bon à savoir</h2>
+    <ul class="savoir-liste" role="list" data-visuel>
+      <li class="savoir-carte" data-fx="vitesse" data-fx-force="2"><span class="service-picto service-picto--statique" data-effet="picto"><svg class="picto" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 41s-15-9-15-20a8 8 0 0 1 15-4 8 8 0 0 1 15 4c0 11-15 20-15 20z" pathLength="1"/></svg></span><h3>La première inscription est gratuite</h3><p>Un rendez-vous d&#39;une heure pour commencer.</p></li><li class="savoir-carte" data-fx="vitesse" data-fx-force="2"><span class="service-picto service-picto--statique" data-effet="picto"><svg class="picto" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M10 22h20l-2.5 18h-15z" pathLength="1"/><path d="M13 22c0-7 14-7 14 0" pathLength="1"/><path d="M37 5v25" pathLength="1"/><path d="M31.5 30h11l2 11h-15z" pathLength="1"/><path d="M35 34v6M39 34v6" pathLength="1"/></svg></span><h3>Tout se personnalise</h3><p>Les services s&#39;adaptent sur demande.</p></li><li class="savoir-carte" data-fx="vitesse" data-fx-force="2"><span class="service-picto service-picto--statique" data-effet="picto"><svg class="picto" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M12 5h18l8 8v30H12z" pathLength="1"/><path d="M30 5v8h8" pathLength="1"/><path d="M18 21h14" pathLength="1"/><path d="M18 27h14" pathLength="1"/><path d="M18 33h9" pathLength="1"/></svg></span><h3>La moitié du prix</h3><p>Avec l&#39;avance immédiate de l&#39;Urssaf, sous conditions.</p></li>
+    </ul>
+    <p class="savoir-lien" data-anime><a href="/services#avance" class="lien-fleche" data-libelle="Services">Comment ça marche <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="pied-bande" aria-hidden="true"></div>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.svg" alt="ATOUS CŒUR" width="225" height="40" loading="lazy">
+      <p>Services à la personne · Hondainville (Oise)</p>
+    </div>
+    <div>
+      <p class="pied-titre">Téléphone</p>
+      <p><a class="pied-tel" href="tel:+33687546888">06 87 54 68 88</a></p>
+      <p class="pied-titre">E-mail</p>
+      <p class="pied-email">jeromesannier@yahoo.fr</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/jerome" data-libelle="Jérôme">Jérôme</a></li><li><a href="/reserver" data-libelle="Réserver" aria-current="page">Réserver</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Pratique</p>
+      <ul>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+      <p class="pied-legal">Déclaré services à la personne · SAP 924824808<br>SIRET 924 824 808 00019</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : formulaires et réservations simulés, rien n&#39;est envoyé.</p><p>Mentions légales · à compléter &nbsp;|&nbsp; Politique de confidentialité · à compléter</p><p>© ATOUS CŒUR · Jérôme Sannier</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--sombre" href="tel:+33687546888"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>Appeler</a>
+</div>
+</body>
+</html>

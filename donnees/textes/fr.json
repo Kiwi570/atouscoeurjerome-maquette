@@ -1,0 +1,356 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "actionEntete": "Réserver",
+    "appeler": "Appeler",
+    "appelerJerome": "Appeler Jérôme",
+    "sommaire": "Sommaire",
+    "confort": "Pratique",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette de démonstration : formulaires et réservations simulés, rien n'est envoyé.",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Services à la personne",
+    "logoAria": "ATOUS CŒUR, accueil",
+    "mentions": "Mentions légales",
+    "confidentialite": "Politique de confidentialité",
+    "aCompleter": "à compléter",
+    "siret": "SIRET 924 824 808 00019",
+    "sap": "Déclaré services à la personne · SAP 924824808",
+    "base": "Hondainville (Oise)",
+    "email": "E-mail",
+    "telephone": "Téléphone",
+    "parHeure": "/ h",
+    "avecAvance": "avec l'avance immédiate",
+    "surDemande": "Tarif sur demande",
+    "reserverService": "Réserver ce service",
+    "voirServices": "Voir les services",
+    "fin": {
+      "surtitre": "Un coup de main ?",
+      "titre1": "Un coup de fil",
+      "titre2": "suffit.",
+      "texte": "Jérôme répond à vos questions et fixe avec vous la première inscription, gratuite.",
+      "reserver": "Réserver en ligne",
+      "ecrire": "Lui écrire"
+    },
+    "zone": {
+      "surtitre": "Où intervient Jérôme",
+      "titre1": "Depuis",
+      "titre2": "Hondainville.",
+      "texte": "ATOUS CŒUR est installée à Hondainville, dans l'Oise. Vous habitez un peu plus loin ? Appelez Jérôme : vous verrez ensemble.",
+      "legende": "Repères autour de Hondainville. La zone d'intervention se précise par téléphone.",
+      "carteAria": "Carte schématique : Hondainville au centre, avec Mouy, Clermont, Noailles, Liancourt, Creil et Beauvais en repères."
+    }
+  },
+  "pages": {
+    "accueil": {
+      "titre": "ATOUS CŒUR · services à la personne à Hondainville (Oise)",
+      "description": "Ménage, jardin, courses, repas, rendez-vous et papiers : Jérôme Sannier vous aide chez vous, dans l'Oise. Première inscription gratuite, avance immédiate de l'Urssaf.",
+      "nav": "Accueil",
+      "partageAlt": "ATOUS CŒUR : vous assister au quotidien, jardin tondu au-dessus d'un village de l'Oise",
+      "accroche": "Vous assister au quotidien"
+    },
+    "services": {
+      "titre": "Services et tarifs · ATOUS CŒUR",
+      "description": "Ménage 30 €, jardin 35 €, courses, rendez-vous et papiers 25 € de l'heure, et la moitié seulement avec l'avance immédiate de l'Urssaf.",
+      "nav": "Services",
+      "partageAlt": "Services et tarifs d'ATOUS CŒUR",
+      "accroche": "Services et tarifs"
+    },
+    "jerome": {
+      "titre": "Jérôme Sannier · ATOUS CŒUR",
+      "description": "Passionnés, expérimentés, attentionnés : ATOUS CŒUR, l'entreprise de services à la personne de Jérôme Sannier, depuis 2022 à Hondainville.",
+      "nav": "Jérôme",
+      "partageAlt": "La voiture d'ATOUS CŒUR, aux couleurs rouge et violette",
+      "accroche": "Passionnés. Expérimentés. Attentionnés."
+    },
+    "reserver": {
+      "titre": "Réserver un créneau · ATOUS CŒUR",
+      "description": "Choisissez un service, une durée et un jour : réservation en quelques étapes, avec le prix et le reste à charge.",
+      "nav": "Réserver",
+      "partageAlt": "Réserver un créneau avec ATOUS CŒUR",
+      "accroche": "Réserver un créneau"
+    },
+    "contact": {
+      "titre": "Contact · ATOUS CŒUR",
+      "description": "Appelez Jérôme au 06 87 54 68 88 ou écrivez-lui. ATOUS CŒUR, services à la personne à Hondainville (Oise).",
+      "nav": "Contact",
+      "partageAlt": "Contacter ATOUS CŒUR",
+      "accroche": "06 87 54 68 88"
+    },
+    "404": {
+      "titre": "Page introuvable · ATOUS CŒUR",
+      "description": "Cette page n'existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Page introuvable"
+    }
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Services à la personne · Hondainville, Oise",
+      "titre1": "Vous assister",
+      "titre2": "au quotidien.",
+      "texte": "Ménage, jardin, courses, repas, rendez-vous et papiers : Jérôme Sannier vient chez vous, pour que vous restiez bien chez vous.",
+      "reserver": "Réserver un créneau",
+      "infoTitre": "Première inscription gratuite",
+      "infoPrix": "30 € → 15 €",
+      "infoTexte": "l'heure de ménage avec l'avance immédiate"
+    },
+    "services": {
+      "surtitre": "Six services à domicile",
+      "titre1": "Ce que Jérôme fait",
+      "titre2": "pour vous.",
+      "texte": "Tous les services se personnalisent sur demande. Les prix sont à l'heure ; avec l'avance immédiate, vous n'en payez que la moitié.",
+      "aussi": "Aide à la toilette et aide à la vie quotidienne : sur demande, à voir ensemble à l'inscription.",
+      "tout": "Détail des services et tarifs"
+    },
+    "avance": {
+      "surtitre": "Avance immédiate de l'Urssaf",
+      "titre1": "Vous ne payez",
+      "titre2": "que la moitié.",
+      "texte": "Les services à la personne ouvrent droit à un crédit d'impôt de 50 %. Avec l'avance immédiate de l'Urssaf, il est déduit tout de suite : plus besoin d'attendre l'année suivante.",
+      "prixAvant": "Prix de l'heure",
+      "prixApres": "Vous payez",
+      "simTitre": "Faites le calcul",
+      "simService": "Service",
+      "simHeures": "Heures par semaine",
+      "simMoins": "Une heure de moins",
+      "simPlus": "Une heure de plus",
+      "simPrix": "Prix sur 4 semaines",
+      "simVous": "Vous payez",
+      "note": "Sous conditions : service gratuit et facultatif de l'Urssaf, dans la limite des plafonds annuels du crédit d'impôt. Demandez-le à Jérôme lors de la première inscription.",
+      "lien": "Comment ça marche",
+      "lecteur": "Ménage : 30 € de l'heure, 15 € avec l'avance immédiate.",
+      "valeurAvant": "30 €",
+      "valeurApres": "15 €"
+    },
+    "jerome": {
+      "surtitre": "Qui vient chez vous",
+      "titre1": "Vous reconnaîtrez",
+      "titre2": "sa voiture.",
+      "texte": "ATOUS CŒUR, l'entreprise de Jérôme Sannier, est née en 2022 à Hondainville. L'idée : des services à domicile personnalisés, avec réactivité, professionnalisme et des tarifs abordables.",
+      "mot1": "Passionnés.",
+      "mot2": "Expérimentés.",
+      "mot3": "Attentionnés.",
+      "lien": "Faire connaissance"
+    },
+    "etapes": {
+      "surtitre": "Pour commencer",
+      "titre1": "Trois étapes,",
+      "titre2": "pas une de plus.",
+      "e1titre": "Vous appelez Jérôme",
+      "e1texte": "Au 06 87 54 68 88, ou en réservant un créneau en ligne.",
+      "e2titre": "La première inscription",
+      "e2texte": "Un premier rendez-vous d'une heure, gratuit.",
+      "e3titre": "Jérôme vient chez vous",
+      "e3texte": "Pour le ménage, le jardin, les courses, les repas ou les papiers : ce que vous avez choisi ensemble."
+    },
+    "engagements": {
+      "surtitre": "Nos engagements",
+      "titre1": "Ce qui compte",
+      "titre2": "chez vous.",
+      "e1titre": "Votre vie privée",
+      "e1texte": "Elle est respectée, à chaque passage.",
+      "e2titre": "Vos habitudes",
+      "e2texte": "Vos préférences passent en premier.",
+      "e3titre": "La réactivité",
+      "e3texte": "Un coup de main quand vous en avez besoin.",
+      "e4titre": "Des tarifs abordables",
+      "e4texte": "Des prix à l'heure, clairs, et la moitié seulement avec l'avance immédiate.",
+      "phrase": "Il n'y a pas de meilleur endroit que son chez-soi."
+    }
+  },
+  "services": {
+    "tete": {
+      "surtitre": "Services et tarifs",
+      "titre1": "Tout ce qui aide",
+      "titre2": "à rester chez soi.",
+      "texte": "Six services à domicile, personnalisables sur demande, payés à l'heure.",
+      "infoPrix": "De 25 € à 35 € de l'heure",
+      "infoAvance": "de 12,50 € à 17,50 € avec l'avance immédiate",
+      "tarifs": "Voir les tarifs"
+    },
+    "liste": {
+      "titre": "Les six services",
+      "aussiTitre": "Et aussi, sur demande",
+      "aussiTexte": "Aide à la toilette, aide à la vie quotidienne : tous les services se personnalisent. Parlez-en à Jérôme lors de la première inscription."
+    },
+    "tarifs": {
+      "surtitre": "Tarifs",
+      "titre1": "Des prix à l'heure,",
+      "titre2": "sans surprise.",
+      "colService": "Service",
+      "colPrix": "Prix de l'heure",
+      "colAvance": "Avec l'avance immédiate",
+      "inscription": "Première inscription (1 h)",
+      "gratuit": "Gratuite",
+      "note": "Tarifs repris du site actuel, pour des séances d'une heure."
+    },
+    "avance": {
+      "surtitre": "Avance immédiate",
+      "titre1": "Comment ça",
+      "titre2": "marche ?",
+      "texte": "L'avance immédiate est un service gratuit et facultatif de l'Urssaf. Le crédit d'impôt de 50 % est déduit au moment de payer, au lieu d'être remboursé l'année suivante.",
+      "e1titre": "Votre inscription",
+      "e1texte": "Jérôme demande votre inscription à l'Urssaf. Il faut avoir déjà fait au moins une déclaration de revenus.",
+      "e2titre": "Votre accord",
+      "e2texte": "Après chaque intervention, vous recevez une demande de paiement, que vous validez sur votre espace en ligne.",
+      "e3titre": "La moitié seulement",
+      "e3texte": "L'Urssaf ne prélève que votre part, la moitié, et règle toute la facture à Jérôme.",
+      "note": "Dans la limite des plafonds annuels du crédit d'impôt. Détail officiel sur le site de l'Urssaf."
+    },
+    "faq": {
+      "titre": "Questions fréquentes",
+      "q1": "La première inscription est-elle payante ?",
+      "r1": "Non : la première inscription, d'une heure, est gratuite.",
+      "q2": "Peut-on adapter un service ?",
+      "r2": "Oui, tous les services sont personnalisables sur demande.",
+      "q3": "Pourquoi ne payer que la moitié ?",
+      "r3": "Les services à la personne ouvrent droit à un crédit d'impôt de 50 %. Avec l'avance immédiate de l'Urssaf, il est déduit tout de suite, sous conditions.",
+      "q4": "Jérôme vient-il jusque chez moi ?",
+      "r4": "ATOUS CŒUR est installée à Hondainville, dans l'Oise. Appelez Jérôme au 06 87 54 68 88 pour en parler."
+    }
+  },
+  "jerome": {
+    "tete": {
+      "surtitre": "ATOUS CŒUR · depuis 2022",
+      "mot1": "Passionnés.",
+      "mot2": "Expérimentés.",
+      "mot3": "Attentionnés.",
+      "texte": "ATOUS CŒUR, l'entreprise de services à la personne de Jérôme Sannier, aide les particuliers chez eux depuis 2022, à partir de Hondainville (Oise).",
+      "services": "Ses services"
+    },
+    "idee": {
+      "surtitre": "L'idée",
+      "phrase1": "Il n'y a pas de meilleur endroit",
+      "phrase2": "que son chez-soi.",
+      "texte": "Offrir des services à domicile personnalisés, avec réactivité, professionnalisme et des tarifs abordables, pour aider chacun à garder son indépendance."
+    },
+    "voiture": {
+      "surtitre": "Sur la route",
+      "titre1": "Blanche, rouge",
+      "titre2": "et violette.",
+      "texte": "Vous la verrez arriver devant chez vous : la voiture d'ATOUS CŒUR porte le nom, les services et le numéro de Jérôme.",
+      "p1": "Le nom ATOUS CŒUR, en grand",
+      "p2": "Les services, sur la portière",
+      "p3": "Le numéro : 06 87 54 68 88"
+    },
+    "route": {
+      "titre1": "De chemin",
+      "titre2": "en rendez-vous.",
+      "texte": "Dans les chemins de l'Oise, devant un pôle santé pour un accompagnement, au fond d'un jardin à tondre : la tournée de Jérôme.",
+      "legende1": "Sur un chemin de campagne, près d'une longère",
+      "legende2": "Devant un pôle santé, pour un rendez-vous"
+    },
+    "confiance": {
+      "surtitre": "La confiance",
+      "titre1": "Chez vous,",
+      "titre2": "comme vous l'aimez.",
+      "e1": "Votre vie privée est respectée.",
+      "e2": "Vos préférences et vos habitudes passent en premier.",
+      "e3": "Réactivité et professionnalisme.",
+      "e4": "Des tarifs abordables."
+    },
+    "sap": {
+      "surtitre": "En règle",
+      "titre1": "Déclaré services",
+      "titre2": "à la personne.",
+      "texte": "ATOUS CŒUR est déclarée services à la personne : vos dépenses ouvrent droit au crédit d'impôt de 50 %, déduit tout de suite avec l'avance immédiate de l'Urssaf.",
+      "lien": "L'avance immédiate en détail"
+    }
+  },
+  "reserver": {
+    "tete": {
+      "surtitre": "Réservation",
+      "titre1": "Réservez",
+      "titre2": "un créneau.",
+      "texte": "Choisissez un service, une durée et un jour. Démonstration : rien n'est envoyé.",
+      "info": "Première inscription gratuite"
+    },
+    "form": {
+      "etape1": "Service",
+      "etape2": "Quand",
+      "etape3": "Vous",
+      "etape4": "Récapitulatif",
+      "q1": "De quoi avez-vous besoin ?",
+      "q2": "Combien de temps, et quand ?",
+      "q3": "Vos coordonnées",
+      "q4": "Tout est juste ?",
+      "inscription": "Première inscription",
+      "inscriptionTexte": "1 h, gratuite",
+      "duree": "Durée",
+      "jour": "Jour souhaité",
+      "jourAide": "Les jours passés ne sont pas proposés.",
+      "aujourdhui": "aujourd'hui",
+      "moment": "Moment souhaité",
+      "matin": "Le matin",
+      "apresMidi": "L'après-midi",
+      "egal": "Peu importe",
+      "nom": "Nom et prénom",
+      "tel": "Téléphone",
+      "email": "E-mail (facultatif)",
+      "commune": "Commune",
+      "message": "Un mot pour Jérôme (facultatif)",
+      "donnees": "Vos coordonnées servent seulement à répondre à votre demande. Politique de confidentialité : à compléter.",
+      "retour": "Retour",
+      "continuer": "Continuer",
+      "envoyer": "Envoyer la demande",
+      "finTitre": "Demande prête",
+      "finTexte": "Démonstration : rien n'a été envoyé. Sur le vrai site, Jérôme recevra cette demande.",
+      "recommencer": "Nouvelle demande",
+      "recapTitre": "Votre réservation",
+      "recapService": "Service",
+      "recapDuree": "Durée",
+      "recapJour": "Jour",
+      "recapPrix": "Prix",
+      "recapVous": "Avec l'avance immédiate",
+      "recapVide": "À choisir",
+      "heure": "h"
+    },
+    "appel": {
+      "surtitre": "Vous préférez appeler ?",
+      "titre1": "Jérôme",
+      "titre2": "décroche.",
+      "texte": "Un coup de fil, c'est souvent plus simple : vous lui dites ce dont vous avez besoin, il vous propose un créneau."
+    },
+    "savoir": {
+      "titre": "Bon à savoir",
+      "e1titre": "La première inscription est gratuite",
+      "e1texte": "Un rendez-vous d'une heure pour commencer.",
+      "e2titre": "Tout se personnalise",
+      "e2texte": "Les services s'adaptent sur demande.",
+      "e3titre": "La moitié du prix",
+      "e3texte": "Avec l'avance immédiate de l'Urssaf, sous conditions."
+    }
+  },
+  "contact": {
+    "tete": {
+      "surtitre": "Contact",
+      "titre": "Parlons-en.",
+      "texte": "Le plus simple : appeler Jérôme. Vous pouvez aussi lui écrire.",
+      "emailLibelle": "Par e-mail"
+    },
+    "form": {
+      "titre1": "Écrire",
+      "titre2": "à Jérôme.",
+      "texte": "Formulaire de démonstration : rien n'est envoyé.",
+      "nom": "Nom",
+      "email": "E-mail",
+      "objet": "Objet",
+      "message": "Message",
+      "donnees": "Vos données servent seulement à répondre à votre message. Politique de confidentialité : à compléter.",
+      "envoyer": "Envoyer"
+    }
+  },
+  "introuvable": {
+    "titre1": "Cette page est partie",
+    "titre2": "faire les courses.",
+    "texte": "Elle n'existe pas ou plus. Les services, eux, sont toujours là.",
+    "retour": "Revenir à l'accueil"
+  }
+}

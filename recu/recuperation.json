@@ -1,0 +1,302 @@
+{
+  "site": "https://www.atouscoeurjerome.com/",
+  "date": "2026-11-23T14:38:49.215Z",
+  "pages": [
+    "https://www.atouscoeurjerome.com/",
+    "https://www.atouscoeurjerome.com/members",
+    "https://www.atouscoeurjerome.com/shared-gallery",
+    "https://www.atouscoeurjerome.com/book-online",
+    "https://www.atouscoeurjerome.com/blog",
+    "https://www.atouscoeurjerome.com/booking-calendar/m%C3%A9nage-interieur",
+    "https://www.atouscoeurjerome.com/booking-calendar/entretien-exterieur",
+    "https://www.atouscoeurjerome.com/booking-calendar/rendez-vous-m%C3%A9dicaux-ou-autres",
+    "https://www.atouscoeurjerome.com/booking-calendar/portage-de-course-ou-autres",
+    "https://www.atouscoeurjerome.com/booking-calendar/aide-administrative",
+    "https://www.atouscoeurjerome.com/booking-calendar/premi%C3%A8re-inscription",
+    "https://www.atouscoeurjerome.com/post/atous-coeur-service-%C3%A0-la-personne",
+    "https://www.atouscoeurjerome.com/members-area/jeromesannier/profile",
+    "https://www.atouscoeurjerome.com/members-area/jeromesannier/gallery",
+    "https://www.atouscoeurjerome.com/members-area/jeromesannier/members-area"
+  ],
+  "images": [
+    {
+      "fichier": "logo.jpg",
+      "nom": "logo",
+      "origine": "https://static.wixstatic.com/media/e051a3_de219ba7d01445f68315803d7ebfe3a5~mv2.jpg",
+      "page": "https://www.atouscoeurjerome.com/",
+      "pages": 15,
+      "emplacement": "img (entete)",
+      "contexte": {
+        "alt": "SERVICE A LA PERSONNE",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 960,
+      "hauteur": 798,
+      "poids": 42551,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "logo",
+      "marque": "principale"
+    },
+    {
+      "fichier": "citrus-fruits.jpg",
+      "nom": "citrus-fruits",
+      "origine": "https://static.wixstatic.com/media/11062b_ce2fd8513fae421187d7425625c8bcf9~mv2.jpg",
+      "page": "https://www.atouscoeurjerome.com/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Citrus Fruits",
+        "legende": "",
+        "titre": "",
+        "section": "Aide aux repas",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 1333,
+      "hauteur": 2000,
+      "largeur_origine": 4480,
+      "hauteur_origine": 6720,
+      "poids": 260745,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "salle-bain-elegante.jpg",
+      "nom": "salle-bain-elegante",
+      "origine": "https://static.wixstatic.com/media/11062b_2843492cfa6647d1b7a1ad8e38087ad8~mv2.jpg",
+      "page": "https://www.atouscoeurjerome.com/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Salle de bain élégante",
+        "legende": "",
+        "titre": "",
+        "section": "Aide aux repas",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 2000,
+      "hauteur": 1328,
+      "largeur_origine": 5000,
+      "hauteur_origine": 3321,
+      "poids": 232173,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "philosophie.jpg",
+      "nom": "philosophie",
+      "origine": "https://static.wixstatic.com/media/b0e67662b79d4b2086107d47a3ee8daa.jpg",
+      "page": "https://www.atouscoeurjerome.com/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Notre philosophie",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 2000,
+      "hauteur": 1333,
+      "largeur_origine": 4368,
+      "hauteur_origine": 2912,
+      "poids": 451610,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "entretiens-exterieurs.jpg",
+      "nom": "entretiens-exterieurs",
+      "origine": "https://static.wixstatic.com/media/e051a3_e0402fa59a694f33b3c7bcb41a4e6433~mv2.jpg",
+      "page": "https://www.atouscoeurjerome.com/",
+      "pages": 2,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Entretiens de vos extérieurs",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 2000,
+      "hauteur": 1500,
+      "largeur_origine": 4000,
+      "hauteur_origine": 3000,
+      "poids": 811770,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "sommes-nous.jpg",
+      "nom": "sommes-nous",
+      "origine": "https://static.wixstatic.com/media/e051a3_a41db0afbb144a56934ed8b9a8ef4b1d~mv2.jpg",
+      "page": "https://www.atouscoeurjerome.com/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Qui sommes-nous",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 2000,
+      "hauteur": 1500,
+      "largeur_origine": 4000,
+      "hauteur_origine": 3000,
+      "poids": 963741,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "vous-assister-quotidien.jpg",
+      "nom": "vous-assister-quotidien",
+      "origine": "https://static.wixstatic.com/media/e051a3_6bd51b6bff5c48ebb43ce8a4fe1aae96~mv2.jpg",
+      "page": "https://www.atouscoeurjerome.com/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Vous assister au quotidien",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 2000,
+      "hauteur": 1097,
+      "largeur_origine": 3736,
+      "hauteur_origine": 2050,
+      "poids": 456212,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "avance-immediate-urssaf.jpg",
+      "nom": "avance-immediate-urssaf",
+      "origine": "https://static.wixstatic.com/media/e051a3_0afa40a43dd7495b92591770518d593a~mv2.jpg",
+      "page": "https://www.atouscoeurjerome.com/",
+      "pages": 2,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "AVANCE IMMEDIATE URSSAF",
+        "legende": "",
+        "titre": "",
+        "section": "Qui sommes-nous",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 2000,
+      "hauteur": 1333,
+      "largeur_origine": 3125,
+      "hauteur_origine": 2083,
+      "poids": 329787,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "bright-living-space.jpg",
+      "nom": "bright-living-space",
+      "origine": "https://static.wixstatic.com/media/30b55058d9404c8c9a656fd696775122.jpg",
+      "page": "https://www.atouscoeurjerome.com/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Bright Living Space",
+        "legende": "",
+        "titre": "",
+        "section": "Nos services",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 2000,
+      "hauteur": 1363,
+      "largeur_origine": 3075,
+      "hauteur_origine": 2095,
+      "poids": 274389,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "entretien-exterieur.jpg",
+      "nom": "entretien-exterieur",
+      "origine": "https://static.wixstatic.com/media/e051a3_89fd6e9b83f549a895603ae105e2e3d8~mv2.jpg",
+      "page": "https://www.atouscoeurjerome.com/book-online",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "entretien exterieur",
+        "page": "Nos services",
+        "fichier_origine": ""
+      },
+      "largeur": 2000,
+      "hauteur": 1500,
+      "largeur_origine": 2048,
+      "hauteur_origine": 1536,
+      "poids": 555901,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "vous-assister-quotidien-2.jpg",
+      "nom": "vous-assister-quotidien-2",
+      "origine": "https://static.wixstatic.com/media/e051a3_68b600c800e646a798f7b4f6ff134ccff000.jpg",
+      "page": "https://www.atouscoeurjerome.com/blog",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Vous assister au quotidien",
+        "page": "Blog | ATOUS COEUR",
+        "fichier_origine": ""
+      },
+      "largeur": 1920,
+      "hauteur": 1080,
+      "poids": 24705,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    }
+  ],
+  "ecartees": [
+    {
+      "url": "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+      "raison": "icone"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/e051a3_6bd51b6bff5c48ebb43ce8a4fe1aae96%7Emv2.jpg",
+      "raison": "repetee sur 14/15 pages"
+    },
+    {
+      "url": "https://lh3.googleusercontent.com/a/ACg8ocK9RWj8hJ4k5rIpd6-MS_ggaN1NgJDlcGrTnmWFbj_5%3Ds96-c",
+      "raison": "96 px de large"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/e051a3_57242cfc1cbc4e5dbbd985af932eed4a~mv2.jpg",
+      "raison": "meme image que https://static.wixstatic.com/media/e051a3_0afa40a43dd7495b92591770518d593a~mv2.jpg en 3125x2083"
+    }
+  ]
+}

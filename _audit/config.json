@@ -1,0 +1,6 @@
+{
+  "siteActuel": "www.atouscoeurjerome.com",
+  "pagesTypes": ["/", "/services", "/jerome", "/reserver"],
+  "effets": ["bande", "hero-photo", "prix-coupe", "route", "carte-oise", "picto"],
+  "grille": { "dispenses": {} }
+}
