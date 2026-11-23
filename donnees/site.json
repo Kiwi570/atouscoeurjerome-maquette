@@ -2,7 +2,7 @@
   "nom": "ATOUS CŒUR",
   "adresse": "https://atouscoeurjerome-maquette.vercel.app",
   "siteActuel": "www.atouscoeurjerome.com",
-  "version": 1,
+  "version": 2,
   "langues": ["fr"],
   "navigation": ["accueil", "services", "jerome", "reserver", "contact"],
   "actionEntete": { "page": "reserver" },

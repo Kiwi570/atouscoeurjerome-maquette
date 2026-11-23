@@ -43,8 +43,38 @@
       "titre2": "Hondainville.",
       "texte": "ATOUS CŒUR est installée à Hondainville, dans l'Oise. Vous habitez un peu plus loin ? Appelez Jérôme : vous verrez ensemble.",
       "legende": "Repères autour de Hondainville. La zone d'intervention se précise par téléphone.",
-      "carteAria": "Carte schématique : Hondainville au centre, avec Mouy, Clermont, Noailles, Liancourt, Creil et Beauvais en repères."
-    }
+      "carteAria": "Carte schématique : Hondainville au centre, avec Mouy, Clermont, Noailles, Liancourt, Creil et Beauvais en repères.",
+      "jeu": "Faites rouler la voiture jusqu'à chez vous.",
+      "jeuAide": "Faites-la glisser sur la carte, ou choisissez une ville.",
+      "volOiseau": "de Hondainville, à vol d'oiseau",
+      "infoDepart": "La voiture part de Hondainville.",
+      "villes": "Distances depuis Hondainville"
+    },
+    "composeur": {
+      "titre": "Composez votre semaine",
+      "aide": "Glissez un service sur un jour, ou touchez-le puis touchez le jour. Touchez une heure pour la retirer.",
+      "jetons": "Services à placer",
+      "semaine": "Votre semaine",
+      "ajouter": "Ajouter {service} le {jour}",
+      "retirer": "Retirer {service} du {jour}",
+      "heures": "Heures par semaine",
+      "total": "Prix sur 4 semaines",
+      "vous": "Vous payez",
+      "vider": "Vider la semaine",
+      "demo": "Exemple : deux heures de ménage par semaine.",
+      "lun": "Lundi",
+      "mar": "Mardi",
+      "mer": "Mercredi",
+      "jeu": "Jeudi",
+      "ven": "Vendredi",
+      "sam": "Samedi",
+      "dim": "Dimanche",
+      "plein": "Quatre heures au plus par jour dans cette démonstration.",
+      "ajoute": "{service} ajouté le {jour}.",
+      "retire": "{service} retiré du {jour}.",
+      "vide": "Semaine vidée."
+    },
+    "routeLecture": "Votre lecture de la page"
   },
   "pages": {
     "accueil": {
@@ -173,7 +203,8 @@
       "texte": "Six services à domicile, personnalisables sur demande, payés à l'heure.",
       "infoPrix": "De 25 € à 35 € de l'heure",
       "infoAvance": "de 12,50 € à 17,50 € avec l'avance immédiate",
-      "tarifs": "Voir les tarifs"
+      "tarifs": "Voir les tarifs",
+      "aller": "Aller directement à"
     },
     "liste": {
       "titre": "Les six services",

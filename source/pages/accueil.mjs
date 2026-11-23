@@ -1,11 +1,10 @@
 /* Accueil d'ATOUS CŒUR : ouverture plein cadre sur le vrai jardin, services, avance immédiate, Jérôme et sa voiture,
    trois étapes sur la route, zone autour de Hondainville, engagements, appel final. */
 import { html } from '../../outils/gabarit.mjs';
-import { image, cartesServices, picto, zone, appelFinal } from '../gabarits/blocs.mjs';
+import { image, cartesServices, picto, zone, appelFinal, composeur } from '../gabarits/blocs.mjs';
 
 export const page = { cle: 'accueil', fichier: 'index', imagePartage: 'accueil-ouverture-1280.webp' };
 
-const sim = (c) => c.donnees.services.filter((s) => s.prix != null);
 
 export default (c) => html`
 <section class="hero" id="debut" data-plein-ecran>
@@ -55,23 +54,7 @@ export default (c) => html`
       <p class="surtitre" data-anime>${c.t('accueil.avance.surtitre')}</p>
       <h2 data-anime="lignes">${c.t('accueil.avance.titre1')} <em>${c.t('accueil.avance.titre2')}</em></h2>
       <p data-anime>${c.t('accueil.avance.texte')}</p>
-      <form class="simulateur" data-simulateur data-anime onsubmit="return false">
-        <p class="simulateur-titre">${c.t('accueil.avance.simTitre')}</p>
-        <div class="simulateur-champs">
-          <label class="champ"><span>${c.t('accueil.avance.simService')}</span>
-            <select name="service">${sim(c).map((s, i) => html`<option value="${s.prix}"${i === 0 ? ' selected' : ''}>${s.nom} · ${s.prix} €/h</option>`)}</select></label>
-          <div class="champ"><span id="sim-heures-l">${c.t('accueil.avance.simHeures')}</span>
-            <div class="pas-a-pas" role="group" aria-labelledby="sim-heures-l">
-              <button type="button" data-moins aria-label="${c.s('accueil.avance.simMoins')}">−</button>
-              <output name="heures" aria-live="polite">2</output>
-              <button type="button" data-plus aria-label="${c.s('accueil.avance.simPlus')}">+</button>
-            </div></div>
-        </div>
-        <dl class="simulateur-resultat" aria-live="polite">
-          <div><dt>${c.t('accueil.avance.simPrix')}</dt><dd data-total>240 €</dd></div>
-          <div class="simulateur-vous"><dt>${c.t('accueil.avance.simVous')}</dt><dd data-vous>120 €</dd></div>
-        </dl>
-      </form>
+      ${composeur(c, 'compo-accueil')}
       <p class="note" data-anime>${c.t('accueil.avance.note')}</p>
       <p data-anime>${c.lien('services', { ancre: 'avance', classe: 'lien-fleche', texte: html`${c.t('accueil.avance.lien')} <span aria-hidden="true">→</span>` })}</p>
     </div>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#FBF7F2">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -60,7 +60,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ATOUS CŒUR","description":"Services à la personne à domicile : ménage, jardin, courses, aide aux repas, accompagnement aux rendez-vous, aide administrative.","url":"https://atouscoeurjerome-maquette.vercel.app/","telephone":"+33687546888","email":"jeromesannier@yahoo.fr","founder":{"@type":"Person","name":"Jérôme Sannier"},"foundingDate":"2022","address":{"@type":"PostalAddress","addressLocality":"Hondainville","addressRegion":"Oise","addressCountry":"FR"},"identifier":"SIRET 92482480800019","makesOffer":[{"@type":"Offer","name":"Ménage intérieur","price":"30","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Entretien extérieur","price":"35","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Rendez-vous médicaux ou autres","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Portage de courses","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Aide administrative","price":"25","priceCurrency":"EUR","unitText":"heure"}]}</script>
 </head>
 <body id="haut">
-<div data-voile data-forme="glisse" aria-hidden="true"><span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>Jérôme</span></div></div>
+<div data-voile data-forme="glisse" aria-hidden="true"><span class="voile-biais voile-biais--haut"></span><span class="voile-biais voile-biais--bas"></span><span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>Jérôme</span></div></div>
 <div class="ouverture-panneau" data-ouverture aria-hidden="true">
   <span class="ouverture-bande"><i></i></span>
   <div class="ouverture-marque" data-ouverture-objet>
@@ -83,6 +83,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
     </div>
   </div>
+  <div class="entete-route" aria-hidden="true" data-audit-ignorer data-superpose><span class="entete-voiture" data-effet="lecture" data-grille="fil"><svg viewBox="0 0 64 32" aria-hidden="true"><path d="M6 22c0-4 2-7 6-8l8-7h18l10 7h6c3 0 5 2 5 5v3z" fill="#fff" stroke="#2D1838" stroke-width="2" stroke-linejoin="round"/><path d="M9 21l40-10 3 3-40 10z" fill="#D7262E"/><circle cx="17" cy="24" r="5" fill="#2D1838"/><circle cx="48" cy="24" r="5" fill="#2D1838"/></svg></span></div>
 </header>
 <script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
    et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */

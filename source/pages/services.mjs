@@ -1,7 +1,7 @@
 /* Services et tarifs : ouverture scindée (titre et fourchette de prix, photo de l'entrée), six services en rangées,
    tarifs, avance immédiate pas à pas avec simulateur, questions fréquentes, appel final. */
 import { html } from '../../outils/gabarit.mjs';
-import { image, picto, prixBloc, prix, appelFinal } from '../gabarits/blocs.mjs';
+import { image, picto, prixBloc, prix, appelFinal, composeur } from '../gabarits/blocs.mjs';
 
 export const page = { cle: 'services', fichier: 'services', imagePartage: 'grok/services-ouverture-1168.webp' };
 
@@ -32,9 +32,10 @@ export default (c) => html`
       <p class="tete-intro hero-anim">${c.t('services.tete.texte')}</p>
       <p class="tete-fourchette hero-anim" data-info-cle><strong data-prix>${c.t('services.tete.infoPrix')}</strong><span>${c.t('services.tete.infoAvance')}</span></p>
       <p class="tete-actions hero-anim">${c.lien('reserver', { classe: 'bouton', texte: c.t('commun.actionEntete'), attrs: 'data-action-principale data-survol="magnetique"' })} <a class="bouton bouton--contour" href="#tarifs">${c.t('services.tete.tarifs')}</a></p>
+      <nav class="puces-services hero-anim" aria-label="${c.s('services.tete.aller')}"><span>${c.t('services.tete.aller')}</span>${c.donnees.services.map((x) => html`<a href="#${x.cle}">${picto(x.picto, 'picto picto--puce')}${x.court}</a>`)}</nav>
     </div>
     <div class="tete-scindee-visuel">
-      <span class="tete-bande" aria-hidden="true"><i data-effet="bande"></i></span>
+      <span class="tete-bande" data-superpose aria-hidden="true"><i data-effet="bande"></i></span>
       ${image(c, 'grok/services-ouverture', { priorite: true, classe: 'tete-media', sizes: '(max-width: 760px) 100vw, 45vw', ratio: '4 / 5', attrs: 'data-iris-centre data-fx="parallaxe" data-fx-force="6"' })}
     </div>
   </div>
@@ -96,7 +97,7 @@ export default (c) => html`
         <div class="coupe-avant"><span class="coupe-libelle">${c.t('accueil.avance.prixAvant')}</span><span class="coupe-cadre"><span class="coupe-prix">${c.t('accueil.avance.valeurAvant')}</span><span class="coupe-bande" data-superpose><i></i></span></span></div>
         <div class="coupe-apres"><span class="coupe-libelle">${c.t('accueil.avance.prixApres')}</span><span class="coupe-nouveau">${c.t('accueil.avance.valeurApres')}</span></div>
       </div>
-      ${simulateur(c, 'sim-services')}
+      ${composeur(c, 'compo-services')}
     </div>
   </div>
 </section>

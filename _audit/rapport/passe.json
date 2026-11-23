@@ -1,15 +1,15 @@
 {
- "id": "20261123-155557-standard-partiel",
- "date": "2026-11-23T15:57:45.766Z",
- "niveau": "standard",
- "pages": "toutes",
+ "id": "20261123-170330-complet-cible-partiel",
+ "date": "2026-11-23T17:07:33.144Z",
+ "niveau": "complet",
+ "pages": "/,/services,/jerome",
  "etapes": [
-  "fichiers",
-  "films"
+  "mesures",
+  "ecran"
  ],
- "version": "1",
+ "version": "2",
  "echecs": 0,
- "aRegarder": 3,
+ "aRegarder": 0,
  "nonLances": 0,
  "manquants": 0,
  "statut": "complet"

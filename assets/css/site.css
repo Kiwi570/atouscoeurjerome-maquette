@@ -24,7 +24,7 @@
   --rayon: 20px;
   --largeur: 1280px;
   --pente: -7deg;
-  --section: clamp(72px, 10vw, 140px);
+  --section: clamp(64px, 8vw, 120px);
 }
 body { font-size: clamp(1.0625rem, 1rem + .2vw, 1.125rem); line-height: 1.6; }
 h1, h2, h3 { font-weight: 800; letter-spacing: -.02em; }
@@ -511,3 +511,116 @@ html:not(.js) .hero-texte { padding-top: 24px; }
   .tete-actions .bouton { min-height: 48px; padding-block: .55em; }
 }
 .coupe-cadre { position: relative; display: inline-block; }
+
+/* ========== v2 : jeu, fil conducteur, voile en diagonale ========== */
+:root { --t1: #2D1838; --t2: #5B2A86; --t3: #A3203F; --t4: #D7262E; --t5: #7A4AA6; }
+
+/* Composez votre semaine. */
+.composeur { margin: 28px 0 18px; padding: clamp(16px, 2.4vw, 26px); border-radius: var(--rayon); background: var(--fond); color: var(--texte); box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .5); }
+.composeur-tete { display: grid; gap: 4px; margin-bottom: 14px; }
+.composeur-titre { margin: 0; font-family: var(--police-titres); font-weight: 800; font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem); color: var(--aubergine); letter-spacing: -.01em; }
+.composeur-aide { margin: 0; font-size: .95rem; color: var(--texte-doux); }
+.composeur-jetons { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.jeton { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 6px 14px 6px 6px; border: 2px solid transparent; border-radius: 999px; background: #fff; color: var(--aubergine); font-weight: 700; font-size: .95rem; box-shadow: 0 1px 0 var(--ligne), 0 6px 16px -8px rgba(45, 24, 56, .35); cursor: grab; touch-action: manipulation; user-select: none; transition: transform .25s var(--courbe), border-color .25s, box-shadow .25s; }
+.jeton:hover { transform: translateY(-2px); }
+.jeton[aria-pressed="true"] { border-color: var(--t); box-shadow: 0 0 0 3px color-mix(in srgb, var(--t) 25%, transparent), 0 10px 20px -10px rgba(45, 24, 56, .45); }
+.jeton-picto { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--t); }
+.picto--jeton { width: 22px; height: 22px; stroke: #fff; stroke-width: 2.8; }
+.jeton-prix { font-weight: 400; color: var(--texte-doux); font-size: .875rem; }
+.jeton--fantome { position: fixed; left: 0; top: 0; z-index: 1000; pointer-events: none; cursor: grabbing; box-shadow: 0 20px 40px -10px rgba(45, 24, 56, .5); }
+.composeur-semaine { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.jour { display: grid; grid-template-rows: auto 1fr; gap: 6px; min-width: 0; padding: 4px; border-radius: 14px; background: var(--lin); transition: background .2s, box-shadow .2s; }
+.jour.survole, .a-choisi .jour:hover { background: color-mix(in srgb, var(--rouge) 14%, var(--lin)); box-shadow: inset 0 0 0 2px var(--rouge); }
+.jour-cible { min-height: 44px; border: 0; border-radius: 10px; background: #fff; color: var(--aubergine); font-weight: 700; font-size: .9rem; }
+.a-choisi .jour-cible { box-shadow: inset 0 0 0 2px var(--rouge); }
+.jour-pile { display: grid; align-content: start; gap: 4px; min-height: 140px; }
+.bloc { display: flex; align-items: center; justify-content: center; min-height: 31px; padding: 0 4px; border: 0; border-radius: 8px; background: var(--t); color: #fff; font-weight: 700; font-size: .8125rem; line-height: 1.1; overflow: hidden; cursor: pointer; }
+.bloc span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.composeur-totaux { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 16px 0 6px; }
+.composeur-totaux div { display: grid; gap: 2px; }
+.composeur-totaux dt { font-size: .875rem; color: var(--texte-doux); }
+.composeur-totaux dd { position: relative; margin: 0; font-family: var(--police-titres); font-weight: 800; font-size: clamp(1.4rem, 1.1rem + 1vw, 1.9rem); line-height: 1.15; color: var(--aubergine); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.composeur-vous dd { color: var(--rouge); }
+.composeur-barre { position: absolute; left: 0; bottom: -4px; width: 100%; height: 5px; border-radius: 4px; background: var(--bande); transform-origin: 0 50%; }
+.composeur-pied { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 16px; margin: 6px 0 0; font-size: .95rem; color: var(--texte-doux); }
+.composeur-vider { border: 0; background: none; padding: 0; color: var(--aubergine); font-size: .95rem; }
+.theme-sombre .composeur .lien-fleche { color: var(--aubergine); }
+@media (pointer: coarse) { .bloc { min-height: 44px; min-width: 44px; } .jour-pile { min-height: 188px; } }
+.composeur { container: compo / inline-size; }
+.tete-scindee-texte { position: relative; z-index: 2; }
+.bloc span { text-overflow: clip; }
+@container compo (max-width: 520px) {
+  .composeur-semaine { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .jour { grid-template-columns: 72px minmax(0, 1fr); grid-template-rows: auto; align-items: center; padding: 4px; }
+  .jour-pile { display: flex; flex-wrap: wrap; gap: 4px; min-height: 44px !important; }
+  .bloc span { display: none; }
+  .bloc { width: 44px; min-height: 44px; flex: none; }
+}
+@media (max-width: 560px) {
+  .composeur-semaine { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .jour { grid-template-columns: 72px minmax(0, 1fr); grid-template-rows: auto; align-items: center; padding: 4px; }
+  .jour-pile { display: flex; flex-wrap: wrap; gap: 4px; min-height: 44px !important; }
+  .bloc span { display: none; }
+  .bloc { width: 44px; min-height: 44px; flex: none; }
+  .jour-cible { font-size: .95rem; }
+  .jeton { padding-right: 12px; }
+  .jeton-prix { display: none; }
+  .composeur-totaux { grid-template-columns: 1fr 1fr; }
+  .composeur-totaux div:first-child { grid-column: 1 / -1; }
+}
+
+/* Carte : la voiture qu'on fait rouler. */
+.carte-voiture { cursor: grab; touch-action: none; }
+.carte-voiture-corps { transform-box: fill-box; }
+.carte-trace { fill: none; stroke: var(--rouge); stroke-width: 3; stroke-dasharray: 8 8; stroke-linecap: round; }
+.zone-jeu { padding: 12px 16px; border-radius: 14px; background: var(--lin); }
+.zone-jeu strong { color: var(--aubergine); }
+.carte-info { margin: 10px 0 8px; font-weight: 700; color: var(--aubergine); min-height: 1.6em; }
+.carte-distances { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.carte-distances button { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; border: 0; border-radius: 999px; background: var(--lin); color: var(--aubergine); font-weight: 700; font-size: .95rem; }
+.carte-distances button span { font-weight: 400; color: var(--texte-doux); }
+.carte-distances button.est-choisie { background: var(--aubergine); color: #fff; }
+.carte-distances button.est-choisie span { color: #E7DCEC; }
+
+/* Fil conducteur : la petite voiture de l'en-tête avance avec la lecture. */
+.entete-route { position: absolute; left: var(--gouttiere); right: var(--gouttiere); bottom: -1px; height: 0; pointer-events: none; }
+.entete-voiture { position: absolute; left: 0; bottom: -4px; width: 30px; height: 15px; }
+.entete-voiture svg { width: 100%; height: 100%; }
+html.menu-ouvert .entete-route { display: none; }
+html:not(.js) .entete-route { display: none; }
+
+/* Voile en diagonale : le bord d'attaque et le bord de fuite reprennent la pente de la bande. */
+[data-voile] { overflow: visible; }
+.voile-biais { position: absolute; left: 0; width: 100%; height: 12.3vw; background: var(--voile-fond); pointer-events: none; }
+.voile-biais--haut { bottom: calc(100% - 1px); clip-path: polygon(0 100%, 100% 0, 100% 100%); }
+.voile-biais--bas { top: calc(100% - 1px); clip-path: polygon(0 0, 100% 0, 0 100%); }
+
+/* Services : aller directement à un service. */
+.puces-services { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 18px; }
+.puces-services > span { width: 100%; font-weight: 700; font-size: .875rem; letter-spacing: .1em; text-transform: uppercase; color: var(--texte-doux); }
+.puces-services a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px 0 10px; border-radius: 999px; background: var(--blanc); color: var(--aubergine); font-weight: 700; text-decoration: none; box-shadow: 0 1px 0 var(--ligne); transition: background .2s, color .2s; }
+.puces-services a:hover { background: var(--aubergine); color: #fff; }
+.puces-services a:hover .picto { stroke: #fff; }
+.picto--puce { width: 22px; height: 22px; stroke-width: 2.6; }
+@media (max-height: 820px) and (min-width: 761px) { .puces-services { display: none; } }
+@media (max-width: 760px) { .puces-services > span { display: none; } }
+
+/* Réservation envoyée : la voiture roule jusqu'à la maison. */
+.arrivee { position: relative; width: min(320px, 100%); margin: 0 auto 12px; aspect-ratio: 320 / 90; }
+.arrivee-decor { width: 100%; height: 100%; overflow: visible; }
+.arrivee-route { fill: none; stroke: var(--aubergine); stroke-width: 3; stroke-dasharray: 8 8; opacity: .5; }
+.arrivee-maison { fill: var(--lin); stroke: var(--aubergine); stroke-width: 3; stroke-linejoin: round; }
+.arrivee-coeur { fill: var(--rouge); }
+.arrivee-voiture { position: absolute; left: 0; bottom: 8%; width: 22%; aspect-ratio: 2 / 1; }
+.arrivee-voiture svg { width: 100%; height: 100%; }
+
+/* Petites joies au survol (souris seulement). */
+@media (hover: hover) and (pointer: fine) {
+  .service-picto { transition: transform .35s var(--courbe); }
+  .service-carte:hover .service-picto { transform: rotate(-10deg) scale(1.1); }
+  .service-lien span { display: inline-block; transition: transform .25s var(--courbe); }
+  .service-lien:hover span { transform: translateX(4px); }
+  .route-etape:hover .route-num { transform: rotate(-8deg) scale(1.08); }
+  .route-num { transition: transform .3s var(--courbe); }
+}
+@media (min-width: 901px) { .avance-grille { align-items: start; } .avance-visuel { position: sticky; top: calc(var(--entete-h) + 40px); } }

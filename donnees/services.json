@@ -1,20 +1,68 @@
 [
-  { "cle": "menage", "nom": "Ménage intérieur", "court": "Ménage", "prix": 30, "image": "grok/menage", "picto": "menage",
+  {
+    "cle": "menage",
+    "nom": "Ménage intérieur",
+    "court": "Ménage",
+    "prix": 30,
+    "image": "grok/menage",
+    "picto": "menage",
     "texte": "Entretien de l'intérieur du domicile et entretien ménager.",
-    "detail": "L'entretien de l'intérieur de votre maison, pièce par pièce, selon ce que vous avez convenu avec Jérôme. Comme tous les services, il se personnalise sur demande." },
-  { "cle": "jardin", "nom": "Jardin et extérieurs", "court": "Jardin", "prix": 35, "image": "grok/jardin", "picto": "jardin",
+    "detail": "L'entretien de l'intérieur de votre maison, pièce par pièce, selon ce que vous avez convenu avec Jérôme. Comme tous les services, il se personnalise sur demande.",
+    "mini": "Ménage"
+  },
+  {
+    "cle": "jardin",
+    "nom": "Jardin et extérieurs",
+    "court": "Jardin",
+    "prix": 35,
+    "image": "grok/jardin",
+    "picto": "jardin",
     "texte": "Jardinage et travaux d'extérieur, pour garder un extérieur net.",
-    "detail": "Tonte, jardinage et travaux d'extérieur : un jardin entretenu, pour profiter de chez soi en gardant son indépendance." },
-  { "cle": "courses", "nom": "Courses", "court": "Courses", "prix": 25, "image": "grok/courses", "picto": "courses",
+    "detail": "Tonte, jardinage et travaux d'extérieur : un jardin entretenu, pour profiter de chez soi en gardant son indépendance.",
+    "mini": "Jardin"
+  },
+  {
+    "cle": "courses",
+    "nom": "Courses",
+    "court": "Courses",
+    "prix": 25,
+    "image": "grok/courses",
+    "picto": "courses",
     "texte": "Livraison rapide de courses et portage jusque chez vous.",
-    "detail": "Jérôme fait vos courses, ou les porte pour vous, et les livre rapidement à la maison." },
-  { "cle": "repas", "nom": "Repas", "court": "Repas", "prix": null, "image": "grok/repas", "picto": "repas",
+    "detail": "Jérôme fait vos courses, ou les porte pour vous, et les livre rapidement à la maison.",
+    "mini": "Courses"
+  },
+  {
+    "cle": "repas",
+    "nom": "Repas",
+    "court": "Repas",
+    "prix": null,
+    "image": "grok/repas",
+    "picto": "repas",
     "texte": "Aide aux repas et préparation des repas à domicile.",
-    "detail": "Aide à la préparation des repas, chez vous, avec vos goûts et vos habitudes." },
-  { "cle": "rendez-vous", "nom": "Rendez-vous", "court": "Rendez-vous", "prix": 25, "image": "rendez-vous", "picto": "rendezvous",
+    "detail": "Aide à la préparation des repas, chez vous, avec vos goûts et vos habitudes.",
+    "mini": "Repas"
+  },
+  {
+    "cle": "rendez-vous",
+    "nom": "Rendez-vous",
+    "court": "Rendez-vous",
+    "prix": 25,
+    "image": "rendez-vous",
+    "picto": "rendezvous",
     "texte": "Accompagnement à vos rendez-vous médicaux ou autres.",
-    "detail": "Jérôme vous accompagne à vos rendez-vous médicaux ou à d'autres rendez-vous." },
-  { "cle": "papiers", "nom": "Papiers", "court": "Papiers", "prix": 25, "image": "grok/papiers", "picto": "papiers",
+    "detail": "Jérôme vous accompagne à vos rendez-vous médicaux ou à d'autres rendez-vous.",
+    "mini": "RDV"
+  },
+  {
+    "cle": "papiers",
+    "nom": "Papiers",
+    "court": "Papiers",
+    "prix": 25,
+    "image": "grok/papiers",
+    "picto": "papiers",
     "texte": "Aide administrative et accompagnement dans vos démarches.",
-    "detail": "Courriers, formulaires, démarches : une aide administrative pour garder vos papiers en ordre." }
+    "detail": "Courriers, formulaires, démarches : une aide administrative pour garder vos papiers en ordre.",
+    "mini": "Papiers"
+  }
 ]

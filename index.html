@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#FBF7F2">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -60,7 +60,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ATOUS CŒUR","description":"Services à la personne à domicile : ménage, jardin, courses, aide aux repas, accompagnement aux rendez-vous, aide administrative.","url":"https://atouscoeurjerome-maquette.vercel.app/","telephone":"+33687546888","email":"jeromesannier@yahoo.fr","founder":{"@type":"Person","name":"Jérôme Sannier"},"foundingDate":"2022","address":{"@type":"PostalAddress","addressLocality":"Hondainville","addressRegion":"Oise","addressCountry":"FR"},"identifier":"SIRET 92482480800019","makesOffer":[{"@type":"Offer","name":"Ménage intérieur","price":"30","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Entretien extérieur","price":"35","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Rendez-vous médicaux ou autres","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Portage de courses","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Aide administrative","price":"25","priceCurrency":"EUR","unitText":"heure"}]}</script>
 </head>
 <body id="haut">
-<div data-voile data-forme="glisse" aria-hidden="true"><span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>Accueil</span></div></div>
+<div data-voile data-forme="glisse" aria-hidden="true"><span class="voile-biais voile-biais--haut"></span><span class="voile-biais voile-biais--bas"></span><span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>Accueil</span></div></div>
 <div class="ouverture-panneau" data-ouverture aria-hidden="true">
   <span class="ouverture-bande"><i></i></span>
   <div class="ouverture-marque" data-ouverture-objet>
@@ -83,6 +83,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
     </div>
   </div>
+  <div class="entete-route" aria-hidden="true" data-audit-ignorer data-superpose><span class="entete-voiture" data-effet="lecture" data-grille="fil"><svg viewBox="0 0 64 32" aria-hidden="true"><path d="M6 22c0-4 2-7 6-8l8-7h18l10 7h6c3 0 5 2 5 5v3z" fill="#fff" stroke="#2D1838" stroke-width="2" stroke-linejoin="round"/><path d="M9 21l40-10 3 3-40 10z" fill="#D7262E"/><circle cx="17" cy="24" r="5" fill="#2D1838"/><circle cx="48" cy="24" r="5" fill="#2D1838"/></svg></span></div>
 </header>
 <script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
    et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
@@ -233,23 +234,45 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="surtitre" data-anime>Avance immédiate de l&#39;Urssaf</p>
       <h2 data-anime="lignes">Vous ne payez <em>que la moitié.</em></h2>
       <p data-anime>Les services à la personne ouvrent droit à un crédit d&#39;impôt de 50 %. Avec l&#39;avance immédiate de l&#39;Urssaf, il est déduit tout de suite : plus besoin d&#39;attendre l&#39;année suivante.</p>
-      <form class="simulateur" data-simulateur data-anime onsubmit="return false">
-        <p class="simulateur-titre">Faites le calcul</p>
-        <div class="simulateur-champs">
-          <label class="champ"><span>Service</span>
-            <select name="service"><option value="30" selected>Ménage intérieur · 30 €/h</option><option value="35">Jardin et extérieurs · 35 €/h</option><option value="25">Courses · 25 €/h</option><option value="25">Rendez-vous · 25 €/h</option><option value="25">Papiers · 25 €/h</option></select></label>
-          <div class="champ"><span id="sim-heures-l">Heures par semaine</span>
-            <div class="pas-a-pas" role="group" aria-labelledby="sim-heures-l">
-              <button type="button" data-moins aria-label="Une heure de moins">−</button>
-              <output name="heures" aria-live="polite">2</output>
-              <button type="button" data-plus aria-label="Une heure de plus">+</button>
-            </div></div>
-        </div>
-        <dl class="simulateur-resultat" aria-live="polite">
-          <div><dt>Prix sur 4 semaines</dt><dd data-total>240 €</dd></div>
-          <div class="simulateur-vous"><dt>Vous payez</dt><dd data-vous>120 €</dd></div>
-        </dl>
-      </form>
+      <div class="composeur" data-composeur data-effet="composeur" data-grille="manipuler" aria-labelledby="compo-accueil" data-t-plein="Quatre heures au plus par jour dans cette démonstration." data-t-ajoute="{service} ajouté le {jour}." data-t-retire="{service} retiré du {jour}." data-t-vide="Semaine vidée." data-t-ajouter="Ajouter {service} le {jour}" data-t-retirer="Retirer {service} du {jour}">
+  <div class="composeur-tete">
+    <p class="composeur-titre" id="compo-accueil">Composez votre semaine</p>
+    <p class="composeur-aide">Glissez un service sur un jour, ou touchez-le puis touchez le jour. Touchez une heure pour la retirer.</p>
+  </div>
+  <div class="composeur-jetons" role="group" aria-label="Services à placer">
+    <button type="button" class="jeton" data-jeton="menage" data-prix="30" data-nom="Ménage" data-mini="Ménage" aria-pressed="false" style="--t:var(--t1)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M10 22h20l-2.5 18h-15z" pathLength="1"/><path d="M13 22c0-7 14-7 14 0" pathLength="1"/><path d="M37 5v25" pathLength="1"/><path d="M31.5 30h11l2 11h-15z" pathLength="1"/><path d="M35 34v6M39 34v6" pathLength="1"/></svg></span><span class="jeton-nom">Ménage</span><span class="jeton-prix">30 €/h</span></button><button type="button" class="jeton" data-jeton="jardin" data-prix="35" data-nom="Jardin" data-mini="Jardin" aria-pressed="false" style="--t:var(--t2)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 42V22" pathLength="1"/><path d="M24 31c-9 0-13-7-13-15 9 0 13 7 13 15z" pathLength="1"/><path d="M24 25c0-8 4-13 13-13 0 9-4 13-13 13z" pathLength="1"/><path d="M9 42h30" pathLength="1"/></svg></span><span class="jeton-nom">Jardin</span><span class="jeton-prix">35 €/h</span></button><button type="button" class="jeton" data-jeton="courses" data-prix="25" data-nom="Courses" data-mini="Courses" aria-pressed="false" style="--t:var(--t3)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M7 18h34l-4.5 21h-25z" pathLength="1"/><path d="M16 18l6-11" pathLength="1"/><path d="M32 18l-6-11" pathLength="1"/><path d="M18 25v8M24 25v8M30 25v8" pathLength="1"/></svg></span><span class="jeton-nom">Courses</span><span class="jeton-prix">25 €/h</span></button><button type="button" class="jeton" data-jeton="rendez-vous" data-prix="25" data-nom="Rendez-vous" data-mini="RDV" aria-pressed="false" style="--t:var(--t4)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M8 11h32v30H8z" pathLength="1"/><path d="M8 19h32" pathLength="1"/><path d="M16 6v9M32 6v9" pathLength="1"/><path d="M24 24v12" pathLength="1"/><path d="M18 30h12" pathLength="1"/></svg></span><span class="jeton-nom">Rendez-vous</span><span class="jeton-prix">25 €/h</span></button><button type="button" class="jeton" data-jeton="papiers" data-prix="25" data-nom="Papiers" data-mini="Papiers" aria-pressed="false" style="--t:var(--t5)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M12 5h18l8 8v30H12z" pathLength="1"/><path d="M30 5v8h8" pathLength="1"/><path d="M18 21h14" pathLength="1"/><path d="M18 27h14" pathLength="1"/><path d="M18 33h9" pathLength="1"/></svg></span><span class="jeton-nom">Papiers</span><span class="jeton-prix">25 €/h</span></button>
+  </div>
+  <ol class="composeur-semaine" role="list" aria-label="Votre semaine">
+    <li class="jour" data-jour="0" data-nom-jour="Lundi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Lun</span><span class="visuellement-cache">Lundi</span></button>
+      <div class="jour-pile"></div>
+    </li><li class="jour" data-jour="1" data-nom-jour="Mardi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Mar</span><span class="visuellement-cache">Mardi</span></button>
+      <div class="jour-pile"><button type="button" class="bloc" data-service="menage" style="--t:var(--t1)" aria-label="Retirer Ménage du mardi"><span>Ménage</span></button></div>
+    </li><li class="jour" data-jour="2" data-nom-jour="Mercredi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Mer</span><span class="visuellement-cache">Mercredi</span></button>
+      <div class="jour-pile"></div>
+    </li><li class="jour" data-jour="3" data-nom-jour="Jeudi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Jeu</span><span class="visuellement-cache">Jeudi</span></button>
+      <div class="jour-pile"></div>
+    </li><li class="jour" data-jour="4" data-nom-jour="Vendredi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Ven</span><span class="visuellement-cache">Vendredi</span></button>
+      <div class="jour-pile"><button type="button" class="bloc" data-service="menage" style="--t:var(--t1)" aria-label="Retirer Ménage du vendredi"><span>Ménage</span></button></div>
+    </li><li class="jour" data-jour="5" data-nom-jour="Samedi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Sam</span><span class="visuellement-cache">Samedi</span></button>
+      <div class="jour-pile"></div>
+    </li><li class="jour" data-jour="6" data-nom-jour="Dimanche">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Dim</span><span class="visuellement-cache">Dimanche</span></button>
+      <div class="jour-pile"></div>
+    </li>
+  </ol>
+  <dl class="composeur-totaux" aria-live="polite">
+    <div><dt>Heures par semaine</dt><dd data-c="heures">2 h</dd></div>
+    <div><dt>Prix sur 4 semaines</dt><dd data-c="total">240 €</dd></div>
+    <div class="composeur-vous"><dt>Vous payez</dt><dd data-c="vous"><span class="composeur-barre" aria-hidden="true"></span>120 €</dd></div>
+  </dl>
+  <p class="composeur-pied"><span data-c="message" role="status">Exemple : deux heures de ménage par semaine.</span> <button type="button" class="lien-fleche composeur-vider" data-vider>Vider la semaine</button></p>
+</div>
       <p class="note" data-anime>Sous conditions : service gratuit et facultatif de l&#39;Urssaf, dans la limite des plafonds annuels du crédit d&#39;impôt. Demandez-le à Jérôme lors de la première inscription.</p>
       <p data-anime><a href="/services#avance" class="lien-fleche" data-libelle="Services">Comment ça marche <span aria-hidden="true">→</span></a></p>
     </div>
@@ -299,6 +322,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="surtitre" data-anime>Où intervient Jérôme</p>
       <h2 data-anime="lignes">Depuis <em>Hondainville.</em></h2>
       <p data-anime>ATOUS CŒUR est installée à Hondainville, dans l&#39;Oise. Vous habitez un peu plus loin ? Appelez Jérôme : vous verrez ensemble.</p>
+      <p class="zone-jeu" data-anime><strong>Faites rouler la voiture jusqu&#39;à chez vous.</strong> Faites-la glisser sur la carte, ou choisissez une ville.</p>
       <p data-anime><a class="bouton" href="tel:+33687546888" data-survol="magnetique">Appeler Jérôme</a></p>
     </div>
     <figure class="carte-oise" data-visuel data-effet="carte-oise">
@@ -308,8 +332,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <path class="carte-route" data-superpose d="M341 227 Q 356 246 361 270" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 280 252 215 246" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 400 172 477 150" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 444 210 544 242" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 465 276 554 376" pathLength="1"/><path class="carte-route" data-superpose d="M341 227 Q 183 173 66 53" pathLength="1"/>
     <g class="carte-ondes" data-superpose transform="translate(341 227)"><circle r="40"/><circle r="40"/><circle r="40"/></g>
     <g class="carte-ville" data-repere transform="translate(361 270)"><g><circle r="6"/><text x="0" y="30" text-anchor="middle">Mouy</text></g></g><g class="carte-ville" data-repere transform="translate(215 246)"><g><circle r="6"/><text x="-12" y="6" text-anchor="end">Noailles</text></g></g><g class="carte-ville" data-repere transform="translate(477 150)"><g><circle r="6"/><text x="12" y="6" text-anchor="start">Clermont</text></g></g><g class="carte-ville" data-repere transform="translate(544 242)"><g><circle r="6"/><text x="-12" y="6" text-anchor="end">Liancourt</text></g></g><g class="carte-ville" data-repere transform="translate(554 376)"><g><circle r="6"/><text x="-12" y="6" text-anchor="end">Creil</text></g></g><g class="carte-ville" data-repere transform="translate(66 53)"><g><circle r="6"/><text x="12" y="6" text-anchor="start">Beauvais</text></g></g>
+    <path class="carte-trace" data-superpose d="M341 227 L341 227"/>
     <g class="carte-centre" data-repere transform="translate(341 227)"><g><circle r="13"/><path d="M0 5s-6.5-4-6.5-8.6a3.4 3.4 0 0 1 6.5-1.7 3.4 3.4 0 0 1 6.5 1.7C6.5 1 0 5 0 5z" fill="#fff"/><text x="0" y="-24" text-anchor="middle">Hondainville</text></g></g>
+    <g class="carte-voiture" data-voiture data-superpose data-x="341" data-y="227" transform="translate(341 227)"><g class="carte-voiture-corps"><rect x="-26" y="-30" width="52" height="40" fill="transparent"/><path d="M-20 0c0-4 2-6 5-7l6-6h14l8 6h5c2 0 4 2 4 4v3z" fill="#fff" stroke="#2D1838" stroke-width="2" stroke-linejoin="round"/><path d="M-18-1l32-8 3 3-33 8z" fill="url(#carte-bande)"/><circle cx="-12" cy="1" r="4" fill="#2D1838"/><circle cx="12" cy="1" r="4" fill="#2D1838"/></g></g>
   </svg>
+  <p class="carte-info" data-carte-info data-suffixe="de Hondainville, à vol d&#39;oiseau" role="status">La voiture part de Hondainville.</p>
+  <ul class="carte-distances" role="list" aria-label="Distances depuis Hondainville">
+    <li><button type="button" data-ville="Mouy" data-x="361" data-y="270" data-km="3">Mouy <span>3 km</span></button></li><li><button type="button" data-ville="Noailles" data-x="215" data-y="246" data-km="7">Noailles <span>7 km</span></button></li><li><button type="button" data-ville="Clermont" data-x="477" data-y="150" data-km="9">Clermont <span>9 km</span></button></li><li><button type="button" data-ville="Liancourt" data-x="544" data-y="242" data-km="12">Liancourt <span>12 km</span></button></li><li><button type="button" data-ville="Creil" data-x="554" data-y="376" data-km="15">Creil <span>15 km</span></button></li><li><button type="button" data-ville="Beauvais" data-x="66" data-y="53" data-km="19">Beauvais <span>19 km</span></button></li>
+  </ul>
   <figcaption>Repères autour de Hondainville. La zone d&#39;intervention se précise par téléphone.</figcaption>
 </figure>
   </div>

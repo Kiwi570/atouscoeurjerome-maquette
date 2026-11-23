@@ -1,7 +1,7 @@
 /* Effets propres à ATOUS CŒUR. Le socle gère l'ouverture, les transitions, l'en-tête, le menu, les mesures et la
    bibliothèque d'effets (lignes, cascade, rideau, parallaxe, zoom, vitesse, magnétique, posés dans les pages).
    Effets du plan (data-effet) : bande, hero-photo, prix-coupe, route, carte-oise, picto, simulateur, portiere, numero. */
-import { demarrer, boucle, versObjet } from './socle/index.js?v=1';
+import { demarrer, boucle, versObjet } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -217,15 +217,166 @@ async function reservation() {
     R('duree').textContent = `${h} h`;
     R('jour').textContent = j ? j.dataset.libelleJour : vide;
     const p = s && s.dataset.prix !== '' ? Number(s.dataset.prix) : null;
-    R('prix').textContent = p == null ? '—' : p === 0 ? 'Gratuit' : euros(p * h);
-    R('vous').textContent = p == null ? '—' : p === 0 ? 'Gratuit' : euros((p * h) / 2);
+    const g = recap.dataset.gratuit || '';
+    R('prix').textContent = p == null ? '—' : p === 0 ? g : euros(p * h);
+    R('vous').textContent = p == null ? '—' : p === 0 ? g : euros((p * h) / 2);
   };
   form.addEventListener('change', maj);
   maj();
   try {
-    const { init } = await import('./modules/formulaire-par-etapes.js?v=1');
+    const { init } = await import('./modules/formulaire-par-etapes.js?v=2');
     await init(racine, { sujet: 'Réservation ATOUS CŒUR' });
   } catch (err) { console.error('[réservation]', err); }
+}
+
+/* ---------- Composez votre semaine : jetons à glisser (souris) ou à toucher, heures empilées par jour ---------- */
+function composeurs() {
+  $$('[data-composeur]').forEach((cp) => {
+    const jetons = $$('.jeton', cp), jours = $$('.jour', cp);
+    const out = (k) => cp.querySelector(`[data-c="${k}"]`);
+    const message = out('message'), barre = cp.querySelector('.composeur-barre');
+    const T = (k, o = {}) => (cp.dataset['t' + k[0].toUpperCase() + k.slice(1)] || '').replace(/\{(\w+)\}/g, (_, x) => o[x] ?? '');
+    let choisi = null, touche = false;
+    const prixDe = (k) => Number((jetons.find((j) => j.dataset.jeton === k) || {}).dataset?.prix || 0);
+    const nomDe = (k) => (jetons.find((j) => j.dataset.jeton === k) || {}).dataset?.nom || k;
+    const compter = (el, v, suffixe) => {
+      const o = { n: Number(el.dataset.v || 0) };
+      gsap.to(o, { n: v, duration: 0.5, ease: 'power2.out', onUpdate: () => { el.lastChild.textContent = suffixe === 'h' ? `${Math.round(o.n)} h` : euros(Math.round(o.n * 2) / 2); } });
+      el.dataset.v = v;
+    };
+    const totaux = (anime = true) => {
+      const blocs = $$('.bloc', cp);
+      const h = blocs.length, t = blocs.reduce((s, b) => s + prixDe(b.dataset.service), 0) * 4;
+      if (anime) { compter(out('heures'), h, 'h'); compter(out('total'), t); compter(out('vous'), t / 2); }
+      else { out('heures').dataset.v = h; out('total').dataset.v = t; out('vous').dataset.v = t / 2; }
+      if (anime && barre) gsap.fromTo(barre, { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: 'power2.out' });
+    };
+    /* Le texte des totaux est le dernier nœud de chaque dd (la barre décorative reste devant). */
+    ['heures', 'total', 'vous'].forEach((k) => { const el = out(k); if (el.lastChild.nodeType !== 3) el.appendChild(document.createTextNode(el.textContent)); });
+    totaux(false);
+    const etiquette = (b, jour) => b.setAttribute('aria-label', T('retirer', { service: nomDe(b.dataset.service), jour: jour.dataset.nomJour.toLowerCase() }));
+    $$('.bloc', cp).forEach((b) => etiquette(b, b.closest('.jour')));
+    const ajouter = (k, jour, depuis) => {
+      const pile = jour.querySelector('.jour-pile');
+      if (pile.children.length >= 4) { message.textContent = T('plein'); gsap.fromTo(jour, { x: -6 }, { x: 0, duration: 0.4, ease: 'elastic.out(1, 0.3)' }); return; }
+      const j = jetons.find((x) => x.dataset.jeton === k);
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'bloc'; b.dataset.service = k; b.style.cssText = j.style.cssText;
+      b.innerHTML = `<span>${j.dataset.mini || nomDe(k)}</span>`;
+      etiquette(b, jour);
+      pile.appendChild(b);
+      const r1 = b.getBoundingClientRect(), r0 = (depuis || j).getBoundingClientRect();
+      gsap.fromTo(b, { x: r0.left - r1.left, y: r0.top - r1.top, scale: 0.8, rotation: -6 }, { x: 0, y: 0, scale: 1, rotation: 0, duration: 0.6, ease: 'back.out(1.6)' });
+      message.textContent = T('ajoute', { service: nomDe(k), jour: jour.dataset.nomJour.toLowerCase() });
+      totaux();
+    };
+    const choisir = (j) => {
+      choisi = choisi === j ? null : j;
+      jetons.forEach((x) => x.setAttribute('aria-pressed', String(x === choisi)));
+      cp.classList.toggle('a-choisi', !!choisi);
+      jours.forEach((jr) => { const n = choisi ? choisi.dataset.nom : ''; jr.querySelector('.jour-cible').setAttribute('aria-label', choisi ? T('ajouter', { service: n, jour: jr.dataset.nomJour.toLowerCase() }) : jr.dataset.nomJour); });
+    };
+    jours.forEach((jr) => jr.querySelector('.jour-cible').setAttribute('aria-label', jr.dataset.nomJour));
+    jetons.forEach((j) => j.addEventListener('click', () => { if (touche) return; choisir(j); }));
+    jours.forEach((jr) => jr.querySelector('.jour-cible').addEventListener('click', () => ajouter((choisi || jetons[0]).dataset.jeton, jr, choisi)));
+    cp.addEventListener('click', (e) => {
+      const b = e.target.closest('.bloc');
+      if (!b) return;
+      const jour = b.closest('.jour');
+      message.textContent = T('retire', { service: nomDe(b.dataset.service), jour: jour.dataset.nomJour.toLowerCase() });
+      gsap.to(b, { scale: 0.4, opacity: 0, duration: 0.25, ease: 'power2.in', onComplete: () => { b.remove(); totaux(); } });
+    });
+    cp.querySelector('[data-vider]').addEventListener('click', () => {
+      const blocs = $$('.bloc', cp);
+      gsap.to(blocs, { scale: 0.4, opacity: 0, duration: 0.2, stagger: 0.03, onComplete: () => { blocs.forEach((b) => b.remove()); totaux(); } });
+      message.textContent = T('vide');
+    });
+    /* Glisser à la souris : un fantôme suit le pointeur et se pose sur le jour survolé. */
+    jetons.forEach((j) => j.addEventListener('pointerdown', (e) => {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      const r = j.getBoundingClientRect();
+      let fantome = null, cible = null;
+      const x0 = e.clientX, y0 = e.clientY;
+      const bouger = (ev) => {
+        if (!fantome && Math.hypot(ev.clientX - x0, ev.clientY - y0) < 6) return;
+        if (!fantome) {
+          touche = true;
+          fantome = j.cloneNode(true); fantome.className = 'jeton jeton--fantome'; fantome.setAttribute('aria-hidden', 'true');
+          fantome.style.width = `${r.width}px`; document.body.appendChild(fantome);
+        }
+        gsap.set(fantome, { x: ev.clientX - r.width / 2, y: ev.clientY - r.height / 2, rotation: (ev.clientX - x0) * 0.02 });
+        const sous = document.elementFromPoint(ev.clientX, ev.clientY);
+        const jr = sous && sous.closest && sous.closest('.jour');
+        if (jr !== cible) { cible && cible.classList.remove('survole'); cible = jr && cp.contains(jr) ? jr : null; cible && cible.classList.add('survole'); }
+      };
+      const lacher = () => {
+        removeEventListener('pointermove', bouger); removeEventListener('pointerup', lacher);
+        if (fantome) { if (cible) ajouter(j.dataset.jeton, cible, fantome); fantome.remove(); }
+        cible && cible.classList.remove('survole');
+        setTimeout(() => { touche = false; }, 0);
+      };
+      addEventListener('pointermove', bouger); addEventListener('pointerup', lacher);
+    }));
+    /* Entrée à l'écran : les heures déjà posées tombent dans leur jour. */
+    gsap.fromTo($$('.jour', cp), { y: 24 }, { y: 0, stagger: 0.06, ease: 'power2.out',
+      scrollTrigger: { trigger: cp, start: 'top 85%', end: 'top 45%', scrub: 0.5 } });
+  });
+}
+
+/* ---------- Carte : la voiture qu'on fait rouler depuis Hondainville ---------- */
+function voituresCarte() {
+  $$('[data-effet="carte-oise"]').forEach((carte) => {
+    const svg = carte.querySelector('svg'), v = carte.querySelector('[data-voiture]'), corps = v.querySelector('.carte-voiture-corps');
+    const trace = carte.querySelector('.carte-trace'), info = carte.querySelector('[data-carte-info]');
+    const villes = $$('[data-ville]', carte).map((b) => ({ b, x: +b.dataset.x, y: +b.dataset.y, nom: b.dataset.ville, km: +b.dataset.km }));
+    const hx = +v.dataset.x, hy = +v.dataset.y;
+    const pos = { x: hx, y: hy };
+    let touche = false;
+    const poser = () => { v.setAttribute('transform', `translate(${pos.x.toFixed(1)} ${pos.y.toFixed(1)})`); trace.setAttribute('d', `M${hx} ${hy} L${pos.x.toFixed(1)} ${pos.y.toFixed(1)}`); };
+    const proche = () => villes.reduce((m, c) => { const d = Math.hypot(c.x - pos.x, c.y - pos.y); return d < m.d ? { c, d } : m; }, { c: null, d: Infinity });
+    const annoncer = (c) => {
+      villes.forEach((x) => x.b.classList.toggle('est-choisie', x === c));
+      info.textContent = c ? `${c.nom}\u00a0: ${c.km}\u00a0km ${info.dataset.suffixe}.` : info.textContent;
+    };
+    const aller = (c, duree = 1.1) => {
+      gsap.to(corps, { rotation: Math.max(-25, Math.min(25, Math.atan2(c.y - pos.y, c.x - pos.x) * 57.3 * (c.x < pos.x ? -1 : 1))), scaleX: c.x < pos.x ? -1 : 1, duration: 0.2, transformOrigin: '50% 50%' });
+      gsap.to(pos, { x: c.x, y: c.y, duration: duree, ease: 'power2.inOut', onUpdate: poser, onComplete: () => { annoncer(c); gsap.to(corps, { rotation: 0, duration: 0.3 }); } });
+    };
+    villes.forEach((c) => c.b.addEventListener('click', () => { touche = true; gsap.killTweensOf(pos); aller(c); }));
+    const versSvg = (e) => { const p = svg.createSVGPoint(); p.x = e.clientX; p.y = e.clientY; return p.matrixTransform(svg.getScreenCTM().inverse()); };
+    v.style.cursor = 'grab';
+    v.addEventListener('pointerdown', (e) => {
+      touche = true; gsap.killTweensOf(pos); e.preventDefault();
+      v.setPointerCapture(e.pointerId); v.style.cursor = 'grabbing';
+      const bouger = (ev) => { const p = versSvg(ev); pos.x = Math.max(10, Math.min(630, p.x)); pos.y = Math.max(10, Math.min(420, p.y)); poser(); const { c, d } = proche(); annoncer(d < 60 ? c : null); };
+      const lacher = () => { v.removeEventListener('pointermove', bouger); v.removeEventListener('pointerup', lacher); v.style.cursor = 'grab'; const { c, d } = proche(); if (d < 90) aller(c, 0.4); };
+      v.addEventListener('pointermove', bouger); v.addEventListener('pointerup', lacher);
+    });
+    /* Démonstration une seule fois à l'entrée : la voiture va jusqu'à Mouy, sauf si le visiteur a déjà joué. */
+    ST.create({ trigger: carte, start: 'top 65%', once: true, onEnter: () => { if (!touche) gsap.delayedCall(0.6, () => { if (!touche) aller(villes[0], 1.4); }); } });
+    ['pointerdown', 'keydown', 'wheel', 'touchstart'].forEach((t) => carte.addEventListener(t, () => { touche = true; }, { passive: true }));
+  });
+}
+
+/* ---------- La petite voiture de l'en-tête avance avec la lecture de la page ---------- */
+function lecture() {
+  const car = $('.entete-voiture');
+  if (!car) return;
+  gsap.fromTo(car, { x: 0 }, { x: () => Math.max(0, car.parentElement.clientWidth - car.offsetWidth), ease: 'none',
+    scrollTrigger: { trigger: document.documentElement, start: 'top top', end: 'max', scrub: 0.3, invalidateOnRefresh: true } });
+}
+
+/* ---------- Réservation envoyée : la voiture roule jusqu'à la maison ---------- */
+function arriveeReservation() {
+  const fpe = $('[data-module="formulaire-par-etapes"]');
+  if (!fpe) return;
+  fpe.addEventListener('formulaire:envoye', () => {
+    const v = fpe.querySelector('.arrivee-voiture'), cadre = fpe.querySelector('.arrivee');
+    if (!v || !cadre) return;
+    const fin = cadre.clientWidth * 0.68;
+    gsap.fromTo(v, { x: 0 }, { x: fin, duration: 1.6, ease: 'power2.inOut', delay: 0.3 });
+    gsap.fromTo(fpe.querySelector('.arrivee-coeur'), { scale: 0, transformOrigin: '50% 50%' }, { scale: 1, duration: 0.5, ease: 'back.out(3)', delay: 1.8 });
+  });
 }
 
 demarrer({
@@ -244,6 +395,10 @@ demarrer({
     tarifs();
     numero();
     reservation();
+    composeurs();
+    voituresCarte();
+    lecture();
+    arriveeReservation();
   },
   /* Intro (< 3 s) : la bande traverse l'écran comme la voiture qui passe, ATOUS CŒUR monte dessus,
      puis le nom glisse jusqu'à l'objet d'ouverture de la page et le panneau s'ouvre depuis lui. */

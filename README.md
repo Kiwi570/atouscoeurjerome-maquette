@@ -1,4 +1,4 @@
-# ATOUS CŒUR · maquette (v1)
+# ATOUS CŒUR · maquette (v2)
 
 Maquette de site pour **ATOUS CŒUR**, services à la personne de Jérôme Sannier à Hondainville (Oise).
 Site actuel : https://www.atouscoeurjerome.com (Wix). Maquette : https://atouscoeurjerome-maquette.vercel.app
@@ -29,7 +29,7 @@ Pages du site actuel non reprises (disponibles en v2) : Blog (un seul article, s
 ### Retiré ou remplacé faute d'information
 
 - **Horaires** : aucun sur le site actuel ; aucun horaire ni « ouvert maintenant » n'est affiché (page Réserver : moment souhaité, matin ou après-midi).
-- **Zone d'intervention** : non précisée ; la carte montre Hondainville et des villes voisines comme repères, avec la phrase « La zone d'intervention se précise par téléphone ».
+- **Zone d'intervention** : non précisée ; la carte montre Hondainville et des villes voisines comme repères, avec leur distance à vol d'oiseau (calculée) et la phrase « La zone d'intervention se précise par téléphone ».
 - **Tarifs de l'aide aux repas et de l'aide à la toilette** : absents ; « Tarif sur demande ».
 - **Photo de Jérôme** : aucune ; la page Jérôme s'appuie sur sa voiture et ses photos de terrain.
 - **Témoignages, chiffres, équipe** : aucun sur le site actuel, rien n'est inventé.
@@ -52,6 +52,6 @@ Pages du site actuel non reprises (disponibles en v2) : Blog (un seul article, s
 
 - Pages générées depuis `donnees/` (textes dans `donnees/textes/fr.json`, services dans `donnees/services.json`) par `node outils/generer.mjs` ; ne jamais modifier les pages HTML à la main.
 - Images : `plan-images.json` et le pipeline de la bibliothèque (`produire.mjs`, `partage.mjs`).
-- Effets propres (`assets/js/site.js`) : bande, respiration du premier écran, prix coupé, route des étapes, carte de l'Oise, pictogrammes, bandeau, portière, tampon, tarifs, numéro, réservation.
+- Effets propres (`assets/js/site.js`) : bande, respiration du premier écran, prix coupé, route des étapes, carte de l'Oise et voiture à faire rouler, composeur de semaine, voiture de lecture sous l'en-tête, pictogrammes, bandeau, portière, tampon, tarifs, numéro, réservation et arrivée.
 - Module de la bibliothèque : `formulaire-par-etapes` (réservation).
 - Audit : `node _audit/audit.mjs` (rapport dans `_audit/rapport/`).

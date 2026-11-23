@@ -1,7 +1,7 @@
 /* Réserver : l'outil d'abord. Réservation simulée en quatre étapes (module formulaire-par-etapes de la bibliothèque),
    récapitulatif qui suit les choix avec le prix et le reste à charge, puis « Vous préférez appeler ? » et « Bon à savoir ». */
-import { html } from '../../outils/gabarit.mjs';
-import { image, picto, prix } from '../gabarits/blocs.mjs';
+import { html, brut } from '../../outils/gabarit.mjs';
+import { image, picto, prix, VOITURE_SVG } from '../gabarits/blocs.mjs';
 
 export const page = { cle: 'reserver', fichier: 'reserver', imagePartage: 'grok/porte-1168.webp' };
 
@@ -14,7 +14,7 @@ export default (c) => html`
       <h1 class="tete-titre" data-iris-centre><span class="ligne-masque"><span class="hero-ligne">${c.t('reserver.tete.titre1')}</span></span> <span class="ligne-masque"><span class="hero-ligne"><em>${c.t('reserver.tete.titre2')}</em></span></span></h1>
       <p class="tete-intro hero-anim masque-ecran-bas">${c.t('reserver.tete.texte')}</p>
       <p class="tete-actions hero-anim"><a class="bouton bouton--sombre" href="tel:${c.site.contact.telephoneLien}" data-action-principale>${c.t('commun.appelerJerome')}</a> <span class="pastille" data-info-cle>${c.t('reserver.tete.info')}</span></p>
-      <aside class="recap hero-anim" data-recap-reservation aria-live="polite">
+      <aside class="recap hero-anim" data-recap-reservation data-gratuit="${c.s('services.tarifs.gratuit')}" aria-live="polite">
         <p class="recap-titre">${c.t('reserver.form.recapTitre')}</p>
         <dl>
           <div><dt>${c.t('reserver.form.recapService')}</dt><dd data-r="service">${c.t('reserver.form.recapVide')}</dd></div>
@@ -96,7 +96,10 @@ export default (c) => html`
           </div>
         </form>
         <div class="fpe__fin" hidden>
-          <svg class="fpe__coche" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-17"/></svg>
+          <div class="arrivee" aria-hidden="true" data-grille="retour">
+            <svg class="arrivee-decor" viewBox="0 0 320 90"><path class="arrivee-route" d="M4 78 H316"/><path class="arrivee-maison" d="M252 74 V44 L276 24 L300 44 V74 Z"/><path class="arrivee-coeur" d="M276 62c-4-3-8-6-8-10a4 4 0 0 1 8-1.6 4 4 0 0 1 8 1.6c0 4-4 7-8 10z"/></svg>
+            <span class="arrivee-voiture">${brut(VOITURE_SVG)}</span>
+          </div>
           <h2>${c.t('reserver.form.finTitre')}</h2>
           <p data-resume></p>
           <p>${c.t('reserver.form.finTexte')}</p>

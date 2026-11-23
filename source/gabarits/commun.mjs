@@ -1,6 +1,7 @@
 /* Gabarit commun : head, en-tête, menu, pied de page, barre fixe du téléphone, voile.
    Les conventions data-* sont celles que lisent le socle JavaScript et l'audit (voir le README). */
 import { html, brut } from '../../outils/gabarit.mjs';
+import { VOITURE_SVG } from './blocs.mjs';
 
 const navigation = (c) => c.site.navigation.filter((cle) => c.pages[cle] && (c.pages[cle].langues || c.langues).includes(c.l));
 
@@ -65,6 +66,7 @@ function entete(c) {
       <a class="menu-sansjs" href="#menu" data-menu-lien>${c.t('commun.menu')}</a>
     </div>
   </div>
+  <div class="entete-route" aria-hidden="true" data-audit-ignorer data-superpose><span class="entete-voiture" data-effet="lecture" data-grille="fil">${brut(VOITURE_SVG)}</span></div>
 </header>
 <script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
    et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
@@ -135,7 +137,7 @@ function voile(c) {
   const vagues = forme === 'vague'
     ? html`<svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg>`
     : '';
-  return html`<div data-voile data-forme="${forme}" aria-hidden="true">${vagues}<span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>${c.libelle(c.page.cle)}</span></div></div>`;
+  return html`<div data-voile data-forme="${forme}" aria-hidden="true">${vagues}${forme === 'glisse' ? brut('<span class="voile-biais voile-biais--haut"></span><span class="voile-biais voile-biais--bas"></span>') : ''}<span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>${c.libelle(c.page.cle)}</span></div></div>`;
 }
 
 export function page(c, contenu) {

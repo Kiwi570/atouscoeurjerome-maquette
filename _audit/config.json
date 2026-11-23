@@ -1,6 +1,24 @@
 {
   "siteActuel": "www.atouscoeurjerome.com",
-  "pagesTypes": ["/", "/services", "/jerome", "/reserver"],
-  "effets": ["bande", "hero-photo", "prix-coupe", "route", "carte-oise", "picto"],
-  "grille": { "dispenses": {} }
+  "pagesTypes": [
+    "/",
+    "/services",
+    "/jerome",
+    "/reserver"
+  ],
+  "effets": [
+    "bande",
+    "hero-photo",
+    "prix-coupe",
+    "route",
+    "carte-oise",
+    "picto",
+    "composeur",
+    "lecture"
+  ],
+  "grille": {
+    "dispenses": {
+      "voile": "glisse voulue : bord d'attaque et bord de fuite en diagonale, à la pente de la bande de la voiture"
+    }
+  }
 }

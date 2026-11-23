@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#FBF7F2">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -60,7 +60,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ATOUS CŒUR","description":"Services à la personne à domicile : ménage, jardin, courses, aide aux repas, accompagnement aux rendez-vous, aide administrative.","url":"https://atouscoeurjerome-maquette.vercel.app/","telephone":"+33687546888","email":"jeromesannier@yahoo.fr","founder":{"@type":"Person","name":"Jérôme Sannier"},"foundingDate":"2022","address":{"@type":"PostalAddress","addressLocality":"Hondainville","addressRegion":"Oise","addressCountry":"FR"},"identifier":"SIRET 92482480800019","makesOffer":[{"@type":"Offer","name":"Ménage intérieur","price":"30","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Entretien extérieur","price":"35","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Rendez-vous médicaux ou autres","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Portage de courses","price":"25","priceCurrency":"EUR","unitText":"heure"},{"@type":"Offer","name":"Aide administrative","price":"25","priceCurrency":"EUR","unitText":"heure"}]}</script>
 </head>
 <body id="haut">
-<div data-voile data-forme="glisse" aria-hidden="true"><span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>Services</span></div></div>
+<div data-voile data-forme="glisse" aria-hidden="true"><span class="voile-biais voile-biais--haut"></span><span class="voile-biais voile-biais--bas"></span><span class="voile-bande"><i></i></span><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="180" height="32"><span data-voile-libelle>Services</span></div></div>
 <div class="ouverture-panneau" data-ouverture aria-hidden="true">
   <span class="ouverture-bande"><i></i></span>
   <div class="ouverture-marque" data-ouverture-objet>
@@ -83,6 +83,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
     </div>
   </div>
+  <div class="entete-route" aria-hidden="true" data-audit-ignorer data-superpose><span class="entete-voiture" data-effet="lecture" data-grille="fil"><svg viewBox="0 0 64 32" aria-hidden="true"><path d="M6 22c0-4 2-7 6-8l8-7h18l10 7h6c3 0 5 2 5 5v3z" fill="#fff" stroke="#2D1838" stroke-width="2" stroke-linejoin="round"/><path d="M9 21l40-10 3 3-40 10z" fill="#D7262E"/><circle cx="17" cy="24" r="5" fill="#2D1838"/><circle cx="48" cy="24" r="5" fill="#2D1838"/></svg></span></div>
 </header>
 <script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
    et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
@@ -114,9 +115,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="tete-intro hero-anim">Six services à domicile, personnalisables sur demande, payés à l&#39;heure.</p>
       <p class="tete-fourchette hero-anim" data-info-cle><strong data-prix>De 25 € à 35 € de l&#39;heure</strong><span>de 12,50 € à 17,50 € avec l&#39;avance immédiate</span></p>
       <p class="tete-actions hero-anim"><a href="/reserver" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Réserver</a> <a class="bouton bouton--contour" href="#tarifs">Voir les tarifs</a></p>
+      <nav class="puces-services hero-anim" aria-label="Aller directement à"><span>Aller directement à</span><a href="#menage"><svg class="picto picto--puce" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M10 22h20l-2.5 18h-15z" pathLength="1"/><path d="M13 22c0-7 14-7 14 0" pathLength="1"/><path d="M37 5v25" pathLength="1"/><path d="M31.5 30h11l2 11h-15z" pathLength="1"/><path d="M35 34v6M39 34v6" pathLength="1"/></svg>Ménage</a><a href="#jardin"><svg class="picto picto--puce" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 42V22" pathLength="1"/><path d="M24 31c-9 0-13-7-13-15 9 0 13 7 13 15z" pathLength="1"/><path d="M24 25c0-8 4-13 13-13 0 9-4 13-13 13z" pathLength="1"/><path d="M9 42h30" pathLength="1"/></svg>Jardin</a><a href="#courses"><svg class="picto picto--puce" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M7 18h34l-4.5 21h-25z" pathLength="1"/><path d="M16 18l6-11" pathLength="1"/><path d="M32 18l-6-11" pathLength="1"/><path d="M18 25v8M24 25v8M30 25v8" pathLength="1"/></svg>Courses</a><a href="#repas"><svg class="picto picto--puce" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M9 24h30v9a9 9 0 0 1-9 9H18a9 9 0 0 1-9-9z" pathLength="1"/><path d="M5 24h38" pathLength="1"/><path d="M18 17c-2.5-3 2.5-5 0-9" pathLength="1"/><path d="M24 17c-2.5-3 2.5-5 0-9" pathLength="1"/><path d="M30 17c-2.5-3 2.5-5 0-9" pathLength="1"/></svg>Repas</a><a href="#rendez-vous"><svg class="picto picto--puce" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M8 11h32v30H8z" pathLength="1"/><path d="M8 19h32" pathLength="1"/><path d="M16 6v9M32 6v9" pathLength="1"/><path d="M24 24v12" pathLength="1"/><path d="M18 30h12" pathLength="1"/></svg>Rendez-vous</a><a href="#papiers"><svg class="picto picto--puce" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M12 5h18l8 8v30H12z" pathLength="1"/><path d="M30 5v8h8" pathLength="1"/><path d="M18 21h14" pathLength="1"/><path d="M18 27h14" pathLength="1"/><path d="M18 33h9" pathLength="1"/></svg>Papiers</a></nav>
     </div>
     <div class="tete-scindee-visuel">
-      <span class="tete-bande" aria-hidden="true"><i data-effet="bande"></i></span>
+      <span class="tete-bande" data-superpose aria-hidden="true"><i data-effet="bande"></i></span>
       <figure class="media tete-media" data-grok data-iris-centre data-fx="parallaxe" data-fx-force="6" style="--apercu:url(data:image/jpeg;base64,/9j/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAAeABgDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUDBAYH/8QAIhAAAgICAwACAwEAAAAAAAAAAQIAAwQRBRIhUWEUIjFy/8QAGAEBAAMBAAAAAAAAAAAAAAAAAQACAwT/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARExQf/aAAwDAQACEQMRAD8Au82ni/6Ev42T+IFqB13XcV8xl136FZ87DREuZlTOtAQ/sqjZPxOWtrwp5ixqmRh/S2zCRc2rdUA9+4SQkWDk2GlfS23BInQqHF+OzsrCsJozA8XStJGvTNhRmE4wrA0Ne/ctm0+EeTzFCOa2Xag+bEIs5vH75BZT1HxCMkF1/9k=);--cadrage:48% 50%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/grok/services-ouverture-1600.webp" srcset="/assets/images/grok/services-ouverture-1024.webp 1024w, /assets/images/grok/services-ouverture-1168.webp 1168w, /assets/images/grok/services-ouverture-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 45vw" alt="Entrée d&#39;une maison de village, porte ouverte sur le jardin, panier de légumes" width="1600" height="2001" fetchpriority="high" loading="eager" decoding="async">
@@ -248,23 +250,45 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="coupe-avant"><span class="coupe-libelle">Prix de l&#39;heure</span><span class="coupe-cadre"><span class="coupe-prix">30 €</span><span class="coupe-bande" data-superpose><i></i></span></span></div>
         <div class="coupe-apres"><span class="coupe-libelle">Vous payez</span><span class="coupe-nouveau">15 €</span></div>
       </div>
-      <form class="simulateur" data-simulateur data-anime onsubmit="return false" aria-labelledby="sim-services">
-  <p class="simulateur-titre" id="sim-services">Faites le calcul</p>
-  <div class="simulateur-champs">
-    <label class="champ"><span>Service</span>
-      <select name="service"><option value="30" selected>Ménage intérieur · 30 €/h</option><option value="35">Jardin et extérieurs · 35 €/h</option><option value="25">Courses · 25 €/h</option><option value="25">Rendez-vous · 25 €/h</option><option value="25">Papiers · 25 €/h</option></select></label>
-    <div class="champ"><span id="sim-services-h">Heures par semaine</span>
-      <div class="pas-a-pas" role="group" aria-labelledby="sim-services-h">
-        <button type="button" data-moins aria-label="Une heure de moins">−</button>
-        <output aria-live="polite">2</output>
-        <button type="button" data-plus aria-label="Une heure de plus">+</button>
-      </div></div>
+      <div class="composeur" data-composeur data-effet="composeur" data-grille="manipuler" aria-labelledby="compo-services" data-t-plein="Quatre heures au plus par jour dans cette démonstration." data-t-ajoute="{service} ajouté le {jour}." data-t-retire="{service} retiré du {jour}." data-t-vide="Semaine vidée." data-t-ajouter="Ajouter {service} le {jour}" data-t-retirer="Retirer {service} du {jour}">
+  <div class="composeur-tete">
+    <p class="composeur-titre" id="compo-services">Composez votre semaine</p>
+    <p class="composeur-aide">Glissez un service sur un jour, ou touchez-le puis touchez le jour. Touchez une heure pour la retirer.</p>
   </div>
-  <dl class="simulateur-resultat" aria-live="polite">
-    <div><dt>Prix sur 4 semaines</dt><dd data-total>240 €</dd></div>
-    <div class="simulateur-vous"><dt>Vous payez</dt><dd data-vous>120 €</dd></div>
+  <div class="composeur-jetons" role="group" aria-label="Services à placer">
+    <button type="button" class="jeton" data-jeton="menage" data-prix="30" data-nom="Ménage" data-mini="Ménage" aria-pressed="false" style="--t:var(--t1)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M10 22h20l-2.5 18h-15z" pathLength="1"/><path d="M13 22c0-7 14-7 14 0" pathLength="1"/><path d="M37 5v25" pathLength="1"/><path d="M31.5 30h11l2 11h-15z" pathLength="1"/><path d="M35 34v6M39 34v6" pathLength="1"/></svg></span><span class="jeton-nom">Ménage</span><span class="jeton-prix">30 €/h</span></button><button type="button" class="jeton" data-jeton="jardin" data-prix="35" data-nom="Jardin" data-mini="Jardin" aria-pressed="false" style="--t:var(--t2)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 42V22" pathLength="1"/><path d="M24 31c-9 0-13-7-13-15 9 0 13 7 13 15z" pathLength="1"/><path d="M24 25c0-8 4-13 13-13 0 9-4 13-13 13z" pathLength="1"/><path d="M9 42h30" pathLength="1"/></svg></span><span class="jeton-nom">Jardin</span><span class="jeton-prix">35 €/h</span></button><button type="button" class="jeton" data-jeton="courses" data-prix="25" data-nom="Courses" data-mini="Courses" aria-pressed="false" style="--t:var(--t3)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M7 18h34l-4.5 21h-25z" pathLength="1"/><path d="M16 18l6-11" pathLength="1"/><path d="M32 18l-6-11" pathLength="1"/><path d="M18 25v8M24 25v8M30 25v8" pathLength="1"/></svg></span><span class="jeton-nom">Courses</span><span class="jeton-prix">25 €/h</span></button><button type="button" class="jeton" data-jeton="rendez-vous" data-prix="25" data-nom="Rendez-vous" data-mini="RDV" aria-pressed="false" style="--t:var(--t4)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M8 11h32v30H8z" pathLength="1"/><path d="M8 19h32" pathLength="1"/><path d="M16 6v9M32 6v9" pathLength="1"/><path d="M24 24v12" pathLength="1"/><path d="M18 30h12" pathLength="1"/></svg></span><span class="jeton-nom">Rendez-vous</span><span class="jeton-prix">25 €/h</span></button><button type="button" class="jeton" data-jeton="papiers" data-prix="25" data-nom="Papiers" data-mini="Papiers" aria-pressed="false" style="--t:var(--t5)"><span class="jeton-picto"><svg class="picto picto--jeton" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M12 5h18l8 8v30H12z" pathLength="1"/><path d="M30 5v8h8" pathLength="1"/><path d="M18 21h14" pathLength="1"/><path d="M18 27h14" pathLength="1"/><path d="M18 33h9" pathLength="1"/></svg></span><span class="jeton-nom">Papiers</span><span class="jeton-prix">25 €/h</span></button>
+  </div>
+  <ol class="composeur-semaine" role="list" aria-label="Votre semaine">
+    <li class="jour" data-jour="0" data-nom-jour="Lundi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Lun</span><span class="visuellement-cache">Lundi</span></button>
+      <div class="jour-pile"></div>
+    </li><li class="jour" data-jour="1" data-nom-jour="Mardi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Mar</span><span class="visuellement-cache">Mardi</span></button>
+      <div class="jour-pile"><button type="button" class="bloc" data-service="menage" style="--t:var(--t1)" aria-label="Retirer Ménage du mardi"><span>Ménage</span></button></div>
+    </li><li class="jour" data-jour="2" data-nom-jour="Mercredi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Mer</span><span class="visuellement-cache">Mercredi</span></button>
+      <div class="jour-pile"></div>
+    </li><li class="jour" data-jour="3" data-nom-jour="Jeudi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Jeu</span><span class="visuellement-cache">Jeudi</span></button>
+      <div class="jour-pile"></div>
+    </li><li class="jour" data-jour="4" data-nom-jour="Vendredi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Ven</span><span class="visuellement-cache">Vendredi</span></button>
+      <div class="jour-pile"><button type="button" class="bloc" data-service="menage" style="--t:var(--t1)" aria-label="Retirer Ménage du vendredi"><span>Ménage</span></button></div>
+    </li><li class="jour" data-jour="5" data-nom-jour="Samedi">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Sam</span><span class="visuellement-cache">Samedi</span></button>
+      <div class="jour-pile"></div>
+    </li><li class="jour" data-jour="6" data-nom-jour="Dimanche">
+      <button type="button" class="jour-cible"><span class="jour-court" aria-hidden="true">Dim</span><span class="visuellement-cache">Dimanche</span></button>
+      <div class="jour-pile"></div>
+    </li>
+  </ol>
+  <dl class="composeur-totaux" aria-live="polite">
+    <div><dt>Heures par semaine</dt><dd data-c="heures">2 h</dd></div>
+    <div><dt>Prix sur 4 semaines</dt><dd data-c="total">240 €</dd></div>
+    <div class="composeur-vous"><dt>Vous payez</dt><dd data-c="vous"><span class="composeur-barre" aria-hidden="true"></span>120 €</dd></div>
   </dl>
-</form>
+  <p class="composeur-pied"><span data-c="message" role="status">Exemple : deux heures de ménage par semaine.</span> <button type="button" class="lien-fleche composeur-vider" data-vider>Vider la semaine</button></p>
+</div>
     </div>
   </div>
 </section>
